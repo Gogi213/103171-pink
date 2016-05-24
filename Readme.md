@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Георгий Стренин](https://up.htmlacademy.ru/adaptive/7/user/103171).
-* Наставник: `Неизвестно`.
+* Наставник: [Наталия Короткова](https://htmlacademy.ru/profile/id63875).
 
 ---
 
