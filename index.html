@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -11,16 +12,18 @@
     <div class="page-header__inner">
       <div class="dropdown-menu">
         <div class="dropdown-menu__top">
-          <a href="#"><img src="#" alt="Pink" class="logo"></a>
+          <div class="logo">
+            <a href="#"><img src="img/logo-pink-white-mobile.svg" alt="Pink" class="logo__picture"></a>
+          </div>
           <span class="dropdown-menu__hamburger"></span>
         </div>
-        <div class="dropdown-menu--picture">
-          <img src="#" alt="phone in hand">
-        </div>
+      </div>
+      <div class="dropdown-menu--picture">
+        <img src="img/iphone-hand-mobile@1x.png" alt="phone in hand">
       </div>
       <div class="dropdown-menu__drop">
         <div class="logo">
-          <a href="#"><img src="#" class="logo__picture" alt="Pink"></a>
+          <a href="#"><img src="img/logo-pink-white-mobile.svg" class="logo__picture" alt="Pink"></a>
         </div>
         <nav class="main-nav">
           <ul class="main-nav__list">
@@ -36,7 +39,7 @@
   <main class="page-main">
     <div class="page-main__inner">
       <div class="download">
-        <a class="download__btn">Скачать приложение:</a>
+        <a class="download__btn">Скачать приложение</a>
         <div class="mobile-market">
           <ul class="mobile-market__list">
             <li class="mobile-market__item">
@@ -49,18 +52,18 @@
               <a href="#"></a>
             </li>
           </ul>
-          <p>Доступно для Iphone, Ipad, Android, Windows Phone, OS x, Windows 8</p>
+          <p class="mobile-market__available">Доступно для Iphone, Ipad, Android, Windows Phone, OS x, Windows 8</p>
         </div>
       </div>
       <div class="content">
         <div class="content__promo">
-          <h2>Устали от серости мегаполиса?</h2>
-          <h2>Нам есть, что вам предложить!</h2>
+          <p>Устали от серости мегаполиса?</p>
+          <p>Нам есть, что вам предложить!</p>
         </div>
         <section class="good">
           <article class="good__item">
             <b>Поднимает настроение</b>
-            <p>Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов</p>
+            <p>Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
           </article>
           <article class="good__item">
             <b>Меняет мир вокруг</b>
@@ -70,7 +73,7 @@
             <b>Заводит новых друзей</b>
             <p>Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
           </article>
-          <img src="#" alt="Всем привет!">
+          <img src="img/iphone-screen-mobile@1x.png" alt="Всем привет!">
         </section>
         <div class="slider">
           <input type="radio" id="btn-1" name="toggle" checked>
@@ -83,8 +86,8 @@
           </div>
           <div class="slider__inner">
             <div class="slider__slides">
-              <div class="first-slide">
-                <b>Николай петров</b>
+              <div class="slider__first-slide">
+                <b>Николай Петров</b>
                 <blockquote>"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</blockquote>
               </div>
             </div>
@@ -101,10 +104,10 @@
           </div>
           <div class="price-slider__inner">
             <div class="price-slider__slides">
-              <div class="first-slide">
+              <div class="price-slider__first-slide">
                 <table>
                   <tr>
-                    <td><b>Стандарт</b><span class="price-slider__price">3,99 usd</span></td>
+                    <th><b>Стандарт</b><span class="price-slider__price">3,99 usd</span></th>
                   </tr>
                   <tr>
                     <td>Розовый фильтр</td>
@@ -125,14 +128,16 @@
   </main>
   <div class="page-inner">
     <div class="contacts">
-      <h2>Остались вопросы?<br>Свяжитесь с нами!</h2>
-      <p>Звоните:</p>
+      <p>Остались вопросы?<br>Свяжитесь с нами!</p>
+      <b>Звоните:</b>
       <span class="contacts__our-contacts">+7 (812) 555-66-66</span>
-      <p>Пишите:</p>
+      <b>Пишите:</b>
       <span class="contacts__our-contacts">mail@htmlacademy.ru</span>
-      <p>Приезжайте в гости:</p>
+      <b>Приезжайте в гости:</b>
       <span class="contacts__our-contacts">Ул. Большая Конюшенная, 19/8</span>
-      <div class="contacts__map"></div>
+      <div class="contacts__map">
+        <img src="img/bg-map-mobile@1x.png">
+      </div>
     </div>
   </div>
 </body>
