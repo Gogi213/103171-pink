@@ -1,8 +1,26 @@
 .slider {
   outline: 1px solid red;
   .font-open-sans(14px; @dark-blue; normal; 30px);
+  text-align: center;
 }
 
 .slider__slides b {
   .font-open-sans(18px; black; bold; 30px);
+}
+
+.slider__describe {
+  display: none;
+}
+
+@media @tablet-widths {
+  .slider__first-slide {
+    display: flex;
+    flex-direction: column;
+  }
+  .slider__blockquote {
+    order: -1;
+  }
+  .slider__describe {
+    display: block;
+  }
 }

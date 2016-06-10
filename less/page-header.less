@@ -1,5 +1,16 @@
 .page-header {
-  background: #2b3b4b url("../img/bg-back-mobile@1x.jpg") no-repeat;
+  .container-fluid ();
+  background-size: cover;
   color: white;
-  outline: 1px solid red;
+}
+
+.page-header__inner{
+  display: flex;
+  flex-direction: column;
+}
+
+@media @tablet-widths {
+  .page-header {
+    margin-bottom: -541px;
+  }
 }

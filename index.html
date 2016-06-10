@@ -12,68 +12,83 @@
     <div class="page-header__inner">
       <div class="dropdown-menu">
         <div class="dropdown-menu__top">
-          <div class="logo">
-            <a href="#"><img src="img/logo-pink-white-mobile.svg" alt="Pink" class="logo__picture"></a>
+          <div class="navigation">
+            <a class="navigation__logo" href="#"><img src="img/logo-pink-white-mobile.svg" alt="Pink" class="navigation__picture"></a>
+            <nav class="main-nav">
+              <ul class="main-nav__list">
+                <li class="main-nav__item"><a href="#">Главная</a></li>
+                <li class="main-nav__item"><a href="#">Фотографии</a></li>
+                <li class="main-nav__item"><a href="#">Конкурс</a></li>
+                <li class="main-nav__item"><a href="#">Html Academy</a></li>
+              </ul>
+            </nav>
           </div>
           <span class="dropdown-menu__hamburger"></span>
         </div>
-      </div>
-      <div class="dropdown-menu--picture">
-        <img src="img/iphone-hand-mobile@1x.png" alt="phone in hand">
+        <div class="dropdown-menu--picture">
+          <img src="img/iphone-hand-mobile@1x.png" alt="phone in hand">
+        </div>
       </div>
       <div class="dropdown-menu__drop">
-        <div class="logo">
+        <div class="dropdown-menu__logo">
           <a href="#"><img src="img/logo-pink-white-mobile.svg" class="logo__picture" alt="Pink"></a>
         </div>
-        <nav class="main-nav">
-          <ul class="main-nav__list">
-            <li class="main-nav__item"><a href="#">Главная</a></li>
-            <li class="main-nav__item"><a href="#">Фотографии</a></li>
-            <li class="main-nav__item"><a href="#">Конкурс</a></li>
-            <li class="main-nav__item"><a href="#">Html Academy</a></li>
-          </ul>
-        </nav>
       </div>
     </div>
   </header>
   <main class="page-main">
     <div class="page-main__inner">
       <div class="download">
-        <a class="download__btn">Скачать приложение</a>
-        <div class="mobile-market">
-          <ul class="mobile-market__list">
-            <li class="mobile-market__item">
-              <a href="#"></a>
+        <div class="download__wrapper">
+          <p class="download__title">Взгляните
+            <br>на жизнь
+            <br>иначе!</p>
+          <a class="download__btn">Скачать приложение</a>
+          <ul class="download__list">
+            <li class="download__item">
+              <a href="#">123</a>
             </li>
-            <li class="mobile-market__item">
-              <a href="#"></a>
+            <li class="download__item">
+              <a href="#">234</a>
             </li>
-            <li class="mobile-market__item">
-              <a href="#"></a>
+            <li class="download__item">
+              <a href="#">345</a>
             </li>
           </ul>
-          <p class="mobile-market__available">Доступно для Iphone, Ipad, Android, Windows Phone, OS x, Windows 8</p>
+          <p class="download__available">Доступно для Iphone, Ipad, Android, Windows Phone, OS x, Windows 8</p>
         </div>
       </div>
       <div class="content">
         <div class="content__promo">
           <p>Устали от серости мегаполиса?</p>
-          <p>Нам есть, что вам предложить!</p>
+          <span>Нам есть, что вам</span><span> предложить!</span>
         </div>
         <section class="good">
-          <article class="good__item">
-            <b>Поднимает настроение</b>
-            <p>Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-          </article>
-          <article class="good__item">
-            <b>Меняет мир вокруг</b>
-            <p>Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-          </article>
-          <article class="good__item">
-            <b>Заводит новых друзей</b>
-            <p>Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-          </article>
-          <img src="img/iphone-screen-mobile@1x.png" alt="Всем привет!">
+          <div class="good__img--desktop"></div>
+          <div class="good__img--desktop"></div>
+          <div class="good__wrapper">
+            <article class="good__item">
+              <b>Поднимает настроение</b>
+              <p>Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+            </article>
+            <article class="good__item">
+              <b>Меняет мир вокруг</b>
+              <p>Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+            </article>
+            <article class="good__item">
+              <b>Заводит новых друзей</b>
+              <p>Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+            </article>
+          </div>
+          <div class="good__img"></div>
+        </section>
+        <section class="profit">
+          <div class="profit__stopwatch"><img src="img/stopwatch-tablet.png" alt="stopwatch"></div>
+          <div class="profit__wrapper">
+            <b class="profit__title">Эффект на 24 часа!</b>
+            <p class="profit__description">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+            <a href="#" class="profit__link">Узнать больше об исследовании</a>
+          </div>
         </section>
         <div class="slider">
           <input type="radio" id="btn-1" name="toggle" checked>
@@ -87,8 +102,9 @@
           <div class="slider__inner">
             <div class="slider__slides">
               <div class="slider__first-slide">
-                <b>Николай Петров</b>
-                <blockquote>"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</blockquote>
+                <b class="slider__name">Николай Петров</b>
+                <span class="slider__describe">25 лет, водитель трамвая</span>
+                <blockquote class="slider__blockquote">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</blockquote>
               </div>
             </div>
           </div>
@@ -128,18 +144,44 @@
   </main>
   <div class="page-inner">
     <div class="contacts">
-      <p>Остались вопросы?<br>Свяжитесь с нами!</p>
-      <b>Звоните:</b>
-      <span class="contacts__our-contacts">+7 (812) 555-66-66</span>
-      <b>Пишите:</b>
-      <span class="contacts__our-contacts">mail@htmlacademy.ru</span>
-      <b>Приезжайте в гости:</b>
-      <span class="contacts__our-contacts">Ул. Большая Конюшенная, 19/8</span>
-      <div class="contacts__map">
-        <img src="img/bg-map-mobile@1x.png">
+      <p class="contacts__title">Остались вопросы?
+        <br>Свяжитесь с нами!</p>
+      <div class="contacts__wrapper">
+        <b>Звоните:</b>
+        <br>
+        <span class="contacts__our-contacts">+7 (812) 555-66-66</span>
+      </div>
+      <div class="contacts__wrapper">
+        <b>Пишите:</b>
+        <br>
+        <span class="contacts__our-contacts">mail@htmlacademy.ru</span>
+      </div>
+      <div class="contacts__wrapper">
+        <b>Приезжайте в гости:</b>
+        <br>
+        <span class="contacts__our-contacts">Ул. Большая Конюшенная, 19/8</span>
       </div>
     </div>
+    <div class="contacts__map">
+      <img src="img/bg-map-mobile@1x.png" alt="map">
+    </div>
   </div>
+  <!-- <footer class="page-footer">
+    <div class="page-footer__inner">
+      <div class="logo">
+        <a href="#"><img src="img/logo-pink-blue-mobile.svg" alt="Pink" class="logo__picture"></a>
+      </div>
+      <div class="social-links">
+        <a href="#" class="social-links__item--tw"></a>
+        <a href="#" class="social-links__item--fb"></a>
+        <a href="#" class="social-links__item--yt"></a>
+      </div>
+      <div class="copyright">
+        <span class="copyright__item">Разработано</span>
+        <a href="#" class="copyright__link"><img src="img/htmlacademy.svg" alt="HtmlAcademy" width="70" height="70"></a>
+      </div>
+    </div>
+  </footer> -->
 </body>
 
 </html>
