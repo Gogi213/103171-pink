@@ -13,115 +13,135 @@
     <div class="page-header__inner">
       <div class="dropdown-menu">
         <div class="dropdown-menu__top">
-          <div class="logo">
-            <a href="#"><img src="img/logo-pink-white-mobile.svg" alt="Pink opacity" class="logo__picture"></a>
+          <div class="navigation">
+            <a class="navigation__logo" href="#">
+              <img class="navigation__picture" src="img/logo-pink-white-mobile.svg" alt="Pink">
+            </a>
+            <nav class="main-nav">
+              <ul class="main-nav__list">
+                <li class="main-nav__item">
+                  <a class="main-nav__link" href="#">Главная</a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__link" href="#">Фотографии</a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__link" href="#">Конкурс</a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__link" href="#">Html Academy</a>
+                </li>
+              </ul>
+            </nav>
           </div>
-          <span class="dropdown-menu__hamburger"></span>
+          <button type="button" class="dropdown-menu__button"></button>
         </div>
       </div>
-      <div class="dropdown-menu--text">
-        <p class="dropdown-menu__title">Конкурс на самое безбашеное путешествие с Пинк</p>
-      </div>
+      <!-- <div class="dropdown-menu__title">
+        <p class="dropdown-menu__text">Конкурс на самое безбашеное путешествие с Пинк</p>
+      </div> -->
     </div>
   </header>
   <main class="page-main">
     <div class="page-main__inner">
-      <div class="form">
-        <h2 class="form__title">Поделитесь своей историей и получите шанс выйграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</h2>
-        <form action="#" method="post">
-          <fieldset class="form__item">
-            <div class="input-group">
-              <label for="field-1" class="input-group--pink">Фамилия:</label>
-              <input type="text" placeholder="Укажите фамилию" id="field-1">
-            </div>
-            <div class="input-group">
-              <label for="field-2" class="input-group--pink">Имя:</label>
-              <input type="text" Placeholder="Введите ваше имя" id="field-2">
-            </div>
-            <div class="input-group">
-              <label for="field-3" class="input-group--pink">Отчество:</label>
-              <input type="text" placeholder="Ну и отчество тоже" id="field-3">
-            </div>
-          </fieldset>
-          <fieldset class="form__item--color">
-            <p class="form__title--pink">Ваши безбашенные достижения в путешествии</p>
-            <div class="input-group">
-              <input type="checkbox" name="achievement" id="field-4" checked>
-              <label for="field-4" class="input-group--dark-blue">Сделал сэлфи с акулой</label>
-            </div>
-            <div class="input-group">
-              <input type="checkbox" name="achievement" id="field-5" checked>
-              <label for="field-5" class="input-group--dark-blue">Обгорел на пляже</label>
-            </div>
-            <div class="input-group">
-              <input type="checkbox" name="achievement" id="field-6">
-              <label for="field-6" class="input-group--dark-blue"> Видел Чака Норриса</label>
-            </div>
-            <div class="input-group">
-              <input type="checkbox" name="achievement" id="field-7">
-              <label for="field-7" class="input-group--dark-blue">Накупил сувениров</label>
-            </div>
-            <div class="input-group">
-              <input type="checkbox" name="achievement" id="field-8" checked>
-              <label for="field-8" class="input-group--dark-blue">Удержал башню</label>
-            </div>
-            <div class="input-group">
-              <input type="checkbox" name="achievement" id="field-9">
-              <label for="field-9" class="input-group--dark-blue">Разгромил отель</label>
-            </div>
-          </fieldset>
-          <fieldset class="form__item">
-            <div class="input-group">
-              <label for="field-10" class="input-group--pink">Номер телефончика</label>
-              <input type="text" placeholder="Номер, пожалуйста" id="field-10">
-            </div>
-            <div class="input-group">
-              <label for="field-11" class="input-group--pink">Адресок почты</label>
-              <input type="text" placeholder="E-mail, пожалуйста" id="field-11">
-            </div>
-          </fieldset>
-          <fieldset class="form__item--color">
-            <p class="form__title--pink">С каким приложением путешествовали?</p>
-            <div class="input-group">
-              <input type="radio" name="name-os" id="field-12" checked>
-              <label for="field-12" class="input-group--dark-blue">Pink для IOS</label>
-            </div>
-            <div class="input-group">
-              <input type="radio" name="name-os" id="field-13">
-              <label for="field-13" class="input-group--dark-blue">Pink на Android</label>
-            </div>
-            <div class="input-group">
-              <input type="radio" name="name-os" id="field-14">
-              <label for="field-14" class="input-group--dark-blue">Windows Phone</label>
-            </div>
-          </fieldset>
-          <fieldset class="form__item">
-            <div class="input-group">
-              <label for="field-15" class="input-group--pink">Опишите свои эмоции</label>
-              <textarea placeholder="Можно прям в красках, не стесняясь в выражениях" id="field-15"></textarea>
-            </div>
-          </fieldset>
-          <input type="submit" class="form__btn" value="Отправить форму">
-        </form>
-        <div class="form-required">
-          <span class="form-required__star">*</span> — обязательные поля
-        </div>
+      <h2 class="page-main__title">Поделитесь своей историей и получите шанс выйграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</h2>
+      <form class="form" action="#" method="post">
+        <fieldset class="form__item">
+          <div class="input-group">
+            <label class="input-group__color" for="field-1">Фамилия:</label>
+            <input type="text" placeholder="Укажите фамилию" id="field-1">
+          </div>
+          <div class="input-group">
+            <label class="input-group__color" for="field-2">Имя:</label>
+            <input type="text" Placeholder="Введите ваше имя" id="field-2">
+          </div>
+          <div class="input-group">
+            <label class="input-group__color" for="field-3">Отчество:</label>
+            <input type="text" placeholder="Ну и отчество тоже" id="field-3">
+          </div>
+        </fieldset>
+        <fieldset class="form__item form__item--color">
+          <p class="form__title">Ваши безбашенные достижения в путешествии</p>
+          <div class="input-group">
+            <input type="checkbox" name="achievement" id="field-4" checked>
+            <label class="input-group__color" for="field-4">Сделал сэлфи с акулой</label>
+          </div>
+          <div class="input-group">
+            <input type="checkbox" name="achievement" id="field-5" checked>
+            <label class="input-group__color" for="field-5">Обгорел на пляже</label>
+          </div>
+          <div class="input-group">
+            <input type="checkbox" name="achievement" id="field-6">
+            <label class="input-group__color" for="field-6"> Видел Чака Норриса</label>
+          </div>
+          <div class="input-group">
+            <input type="checkbox" name="achievement" id="field-7">
+            <label class="input-group__color" for="field-7">Накупил сувениров</label>
+          </div>
+          <div class="input-group">
+            <input type="checkbox" name="achievement" id="field-8" checked>
+            <label class="input-group__color" for="field-8">Удержал башню</label>
+          </div>
+          <div class="input-group">
+            <input type="checkbox" name="achievement" id="field-9">
+            <label class="input-group__color" for="field-9">Разгромил отель</label>
+          </div>
+        </fieldset>
+        <fieldset class="form__item">
+          <div class="input-group">
+            <label class="input-group__color" for="field-10">Номер телефончика</label>
+            <input type="text" placeholder="Номер, пожалуйста" id="field-10">
+          </div>
+          <div class="input-group">
+            <label for="field-11" class="input-group__color">Адресок почты</label>
+            <input type="text" placeholder="E-mail, пожалуйста" id="field-11">
+          </div>
+        </fieldset>
+        <fieldset class="form__item form__item--color">
+          <p class="form__title">С каким приложением путешествовали?</p>
+          <div class="input-group">
+            <input type="radio" name="name-os" id="field-12" checked>
+            <label class="input-group__color" for="field-12">Pink для IOS</label>
+          </div>
+          <div class="input-group">
+            <input type="radio" name="name-os" id="field-13">
+            <label class="input-group__color" for="field-13">Pink на Android</label>
+          </div>
+          <div class="input-group">
+            <input type="radio" name="name-os" id="field-14">
+            <label class="input-group__color" for="field-14">Windows Phone</label>
+          </div>
+        </fieldset>
+        <fieldset class="form__item">
+          <div class="input-group">
+            <label class="input-group__color" for="field-15">Опишите свои эмоции</label>
+            <textarea placeholder="Можно прям в красках, не стесняясь в выражениях" id="field-15"></textarea>
+          </div>
+        </fieldset>
+        <input class="form__btn" type="submit" value="Отправить форму">
+      </form>
+      <div class="form-required">
+        <span class="form-required__star">*</span> — обязательные поля
       </div>
     </div>
   </main>
   <footer class="page-footer">
     <div class="page-footer__inner">
       <div class="logo">
-        <a href="#"><img src="img/logo-pink-blue-mobile.svg" alt="Pink" class="logo__picture"></a>
+        <a class="logo__link" href="#">
+          <img class="logo__picture" src="img/logo-pink-blue-mobile.svg" alt="Pink">
+        </a>
       </div>
       <div class="social-links">
-        <a href="#" class="social-links__item--tw"></a>
-        <a href="#" class="social-links__item--fb"></a>
-        <a href="#" class="social-links__item--yt"></a>
+        <a class="social-links__item social-links__item--tw" href="#"></a>
+        <a class="social-links__item social-links__item--fb" href="#"></a>
+        <a class="social-links__item social-links__item--yt" href="#"></a>
       </div>
       <div class="copyright">
         <span class="copyright__item">Разработано</span>
-        <a href="#" class="copyright__link"><img src="img/htmlacademy.svg" alt="HtmlAcademy" width="70" height="70"></a>
+        <a class="copyright__link" href="#">
+          <img src="img/htmlacademy.svg" alt="HtmlAcademy" width="70" height="70">
+        </a>
       </div>
     </div>
   </footer>

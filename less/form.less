@@ -1,24 +1,29 @@
-.form__item,
-.form__item--color {
+.form__item {
   border: none;
 }
 
-.form__item--color {
-  background-color: #f2f2f2;
+.form__item {
+  label {
+    text-transform: uppercase;
+    color: @pink;
+  }
 }
 
-.form {
-  outline: 1px solid red;
+.form__item--color  {
+  .form__title {
+    .set-font(14px; @pink; normal; 18px);
+  }
+    background-color: #f2f2f2;
+  label {
+    color: @dark-blue;
+    text-transform: none;
+  }
 }
 
 .form__title {
-  .font-open-sans(14px; @dark-blue; normal; 30px);
+  .set-font(14px; @dark-blue; normal; 30px);
 }
 
-.form__title--pink {
-  .font-open-sans(14px; @pink; normal; 18px);
-}
-
-.form__item label, .form__title--pink {
-  text-transform: uppercase;
+.form__title {
+    text-transform: uppercase;
 }

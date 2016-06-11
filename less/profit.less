@@ -1,28 +1,31 @@
 .profit {
-  .font-open-sans(14px; @dark-blue; lighter; 24px);
+  .set-font(14px; @dark-blue; lighter; 24px);
   display: none;
 }
 
-
-
 .profit__title {
-  .font-open-sans(40px; black; bold; 40px);
+  .set-font(40px; black; bold; 40px);
 }
 
 .profit__link {
-  .font-open-sans(14px; @pink; lighter; 24px);
+  .set-font(14px; @pink; lighter; 24px);
 }
-@media @tablet-widths {
-  .profit {
+
+.profit {
+  @media @tablet-widths {
     display: flex;
   }
+}
 
-  .profit__stopwatch {
+.profit__stopwatch {
+  @media @tablet-widths {
     width: 100%;
     text-align: center;
   }
+}
 
-  .profit__wrapper {
+.profit__wrapper {
+  @media @tablet-widths {
     flex-grow: 1;
   }
 }

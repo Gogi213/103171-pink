@@ -1,7 +1,7 @@
 .dropdown-menu {
   background: #2b3b4b url("../img/bg-back-tablet@1x.png") no-repeat;
   background-size: cover;
-  min-height: 50px;
+  min-height: 400px;
   outline: 1px solid blue;
   position: relative;
   z-index: -1;
@@ -18,26 +18,28 @@
 }
 
 .dropdown-menu--text {
-  .font-open-sans(24px; white; lighter; normal);
-}
-
-.dropdown-menu--picture {
-
-  background-size: cover;
+  .set-font(24px; white; lighter; normal);
 }
 
 .dropdown-menu__logo {
   border-bottom: 1px solid #030303;
 }
 
-@media @tablet-widths {
-  .dropdown-menu {
+
+.dropdown-menu {
+  @media @tablet-widths {
     min-height: 730px;
   }
-  .dropdown-menu__top {
+}
+
+.dropdown-menu__top {
+  @media @tablet-widths {
     min-height: 100px;
   }
-  .dropdown-menu--picture {
+}
+
+.dropdown-menu--picture {
+  @media @tablet-widths {
     display: none;
   }
 }

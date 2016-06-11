@@ -1,5 +1,5 @@
 .download {
-  .font-open-sans(14px; white; lighter; 24px);
+  .set-font(14px; white; lighter; 24px);
   background: @blacknblue;
 }
 .download__wrapper {
@@ -10,14 +10,15 @@
   display: flex;
 }
 .download__title {
-  .font-open-sans(40px; white; lighter; normal);
+  .set-font(40px; white; lighter; normal);
   display: none;
 }
 .download__btn {
-  .font-open-sans(18px; white; bold; 18px)
+  .set-font(18px; white; bold; 18px)
 }
-@media @tablet-widths{
-  .download {
+
+.download {
+  @media @tablet-widths{
     background: transparent url("../img/iphone-hand-tablet@1x.png") no-repeat;
     min-height: 542px;
     background-position: 200px 0;
@@ -25,7 +26,10 @@
     flex-direction: column;
     margin-left: 7%;
   }
-  .download__title {
+}
+
+.download__title {
+  @media @tablet-widths{
     display: block;
   }
 }
