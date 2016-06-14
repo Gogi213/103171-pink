@@ -17,37 +17,20 @@
             <a class="navigation__link" href="#">
               <img class="navigation__picture" src="img/logo-pink-white-mobile.svg" alt="Pink">
             </a>
+            <button class="dropdown-menu__button" type="button"></button>
             <nav class="main-nav">
-              <ul class="main-nav__list">
-                <li class="main-nav__item">
-                  <a class="main-nav__link" href="#">Главная</a>
-                </li>
-                <li class="main-nav__item">
-                  <a class="main-nav__link" href="#">Фотографии</a>
-                </li>
-                <li class="main-nav__item">
-                  <a class="main-nav__link" href="#">Конкурс</a>
-                </li>
-                <li class="main-nav__item">
-                  <a class="main-nav__link" href="#">Html Academy</a>
-                </li>
-              </ul>
+              <a class="main-nav__link" href="#">Главная</a>
+              <a class="main-nav__link" href="#">Фотографии</a>
+              <a class="main-nav__link" href="#">Конкурс</a>
+              <a class="main-nav__link" href="#">Html Academy</a>
             </nav>
           </div>
-          <button type="button" class="dropdown-menu__button"></button>
         </div>
       </div>
-      <!-- <div class="dropdown-menu__drop">
-        <div class="dropdown-menu__logo">
-          <a href="#">
-            <img class="logo__picture" src="img/logo-pink-white-mobile.svg" alt="Pink">
-          </a>
-        </div>
-      </div> -->
     </div>
   </header>
   <main class="page-main">
-    <div class="page-main__inner">
+    <div class="second-header second-header--picture">
       <div class="download">
         <div class="download__wrapper">
           <p class="download__title">Взгляните
@@ -68,6 +51,29 @@
           <p class="download__available">Доступно для Iphone, Ipad, Android, Windows Phone, OS x, Windows 8</p>
         </div>
       </div>
+    </div>
+    <div class="page-main__inner">
+      <!-- Здесь download будет менять download-alt  -->
+
+      <!-- Работает только для мобильной версии. -->
+      <div class="download-alt">
+        <div class="download-alt__wrapper">
+          <a class="download__btn">Скачать приложение</a>
+          <ul class="download-alt__list">
+            <li class="download-alt__item">
+              <a class="download-alt__link" href="#">123</a>
+            </li>
+            <li class="download-alt__item">
+              <a class="download-alt__link" href="#">234</a>
+            </li>
+            <li class="download-alt__item">
+              <a class="download-alt__link" href="#">345</a>
+            </li>
+          </ul>
+          <p class="download-alt__available">Доступно для Iphone, Ipad, Android, Windows Phone, OS x, Windows 8</p>
+        </div>
+      </div>
+
       <div class="content">
         <div class="content__promo">
           <p>Устали от серости мегаполиса?</p>
@@ -137,18 +143,37 @@
                 <table>
                   <tr>
                     <th>
+                    </th>
+                    <th>
+                      <b>База</b>
+                      <span class="price-slider__price">1,99 usd</span>
+                    </th>
+                    <th>
                       <b>Стандарт</b>
                       <span class="price-slider__price">3,99 usd</span>
+                    </th>
+                    <th>
+                      <b>Анлим</b>
+                      <span class="price-slider__price">9,99 usd</span>
                     </th>
                   </tr>
                   <tr>
                     <td>Розовый фильтр</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
                   </tr>
                   <tr>
                     <td>Смайлики</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
                   </tr>
                   <tr>
                     <td>Комментарии</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
                   </tr>
                 </table>
               </div>
@@ -182,6 +207,26 @@
       <img src="img/bg-map-mobile@1x.png" alt="map">
     </div>
   </div>
+  <footer class="page-footer page-footer--absent">
+    <div class="page-footer__inner">
+      <div class="logo">
+        <a class="logo__link" href="#">
+          <img class="logo__picture" src="img/logo-pink-blue-mobile.svg" alt="Pink">
+        </a>
+      </div>
+      <div class="social-links">
+        <a class="social-links__item social-links__item--tw" href="#"></a>
+        <a class="social-links__item social-links__item--fb" href="#"></a>
+        <a class="social-links__item social-links__item--yt" href="#"></a>
+      </div>
+      <div class="copyright">
+        <span class="copyright__item">Разработано</span>
+        <a class="copyright__link" href="#">
+          <img src="img/htmlacademy.svg" alt="HtmlAcademy" width="50" height="50">
+        </a>
+      </div>
+    </div>
+  </footer>
 </body>
 
 </html>

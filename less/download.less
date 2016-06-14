@@ -1,6 +1,5 @@
 .download {
   .set-font(14px; white; lighter; 24px);
-  background: @blacknblue;
 }
 .download__wrapper {
   max-width: 340px;
@@ -14,12 +13,17 @@
   display: none;
 }
 .download__btn {
-  .set-font(18px; white; bold; 18px)
+  .set-font(18px; white; bold; 18px);
+  border: 2px solid white;
+  border-radius: 50px;
 }
 
 .download {
+  @media @mobile-widths {
+    display: none;
+  }
+
   @media @tablet-widths{
-    background: transparent url("../img/iphone-hand-tablet@1x.png") no-repeat;
     min-height: 542px;
     background-position: 200px 0;
     display: flex;

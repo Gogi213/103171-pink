@@ -1,8 +1,16 @@
 .page-main {
-  .container-fluid ();
+  @media @desktop-widths {
+    .container-fluid();
+  }
 }
+.page-main__title {
+  text-align: center;
+  .container-fluid-mobile();
+  @media @mobile-widths {
+    .set-font(14px; @dark-blue; normal; 30px);
+  }
 
-.page-main__add-photo {
-  .set-font(14px; @dark-blue; normal; 30px);
-  outline: 1px solid red;
+  @media @tablet-widths {
+    .set-font(18px; @dark-blue; normal; 30px);
+  }
 }

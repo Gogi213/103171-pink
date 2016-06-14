@@ -1,4 +1,15 @@
 .page-footer {
   .container-fluid ();
   outline: 1px solid red;
+
+  &--absent {
+    @media @mobile-widths {
+      display: none;
+    }
+  }
+}
+
+.page-footer__inner {
+  display: flex;
+  justify-content: space-around;
 }

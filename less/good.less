@@ -17,6 +17,11 @@
   b {
   .set-font(18px; black; bold; 30px);
   }
+  h2 {
+    @media @desktop-widths {
+      white-space: nowrap;
+    }
+  }
 }
 
 .good__img {
@@ -24,6 +29,14 @@
   width: 162px;
   height: 277px;
   margin: auto;
+  &--desktop {
+    @media @tablet-widths {
+      display: none;
+    }
+    @media @mobile-widths {
+      display: none;
+    }
+  }
 }
 
 .good__img--desktop:first-child {
