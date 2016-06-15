@@ -1,15 +1,12 @@
 .page-footer {
-  .container-fluid ();
-  outline: 1px solid red;
+  display: flex;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: 0 auto;
 
   &--absent {
     @media @mobile-widths {
       display: none;
     }
   }
-}
-
-.page-footer__inner {
-  display: flex;
-  justify-content: space-around;
 }
