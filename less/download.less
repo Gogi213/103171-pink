@@ -1,10 +1,39 @@
 .download {
-  .font-open-sans(14px; white; lighter; 24px);
-  outline: 1px solid red;
-  background: @blacknblue;
-
+  .set-font(14px; white; lighter; 24px);
+}
+.download__wrapper {
+  max-width: 340px;
+  text-align: center;
+}
+.download__list {
+  display: flex;
+}
+.download__title {
+  .set-font(40px; white; lighter; normal);
+  display: none;
+}
+.download__btn {
+  .set-font(18px; white; bold; 18px);
+  border: 2px solid white;
+  border-radius: 50px;
 }
 
-.download__btn {
-  .font-open-sans(18px; white; bold; 18px)
+.download {
+  @media @mobile-widths {
+    display: none;
+  }
+
+  @media @tablet-widths{
+    min-height: 542px;
+    background-position: 200px 0;
+    display: flex;
+    flex-direction: column;
+    margin-left: 7%;
+  }
+}
+
+.download__title {
+  @media @tablet-widths{
+    display: block;
+  }
 }

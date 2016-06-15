@@ -3,116 +3,146 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Пинк</title>
   <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
   <header class="page-header">
-    <div class="page-header__inner">
-      <div class="dropdown-menu">
-        <div class="dropdown-menu__top">
-          <div class="logo">
-            <a href="#"><img src="img/logo-pink-white-mobile.svg" alt="Pink opacity" class="logo__picture"></a>
-          </div>
-          <span class="dropdown-menu__hamburger"></span>
-        </div>
-      </div>
-      <div class="dropdown-menu--text">
-        <p class="dropdown-menu__title">Фотографии пользователей</p>
-      </div>
+    <div class="dropdown-menu">
+      <a class="dropdown-menu__link" href="index.html">
+        <img class="dropdown-menu__picture" src="img/logo-pink-white-mobile.svg" alt="Pink">
+      </a>
+      <button class="dropdown-menu__button" type="button"></button>
+      <nav class="main-nav">
+        <a class="main-nav__link" href="index.html">Главная</a>
+        <a class="main-nav__link" href="photo.html">Фотографии</a>
+        <a class="main-nav__link" href="form.html">Конкурс</a>
+        <a class="main-nav__link" href="http://htmlacademy.ru">Html Academy</a>
+      </nav>
     </div>
   </header>
   <main class="page-main">
+    <div class="second-header">
+      <h1 class="second-header__title second-header__title--small">
+          Фотографии<br> пользователей
+        </h1>
+    </div>
     <div class="page-main__inner">
-      <div class="page-main__add-photo">
-        <p>Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
-      </div>
+      <h2 class="page-main__title">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</h2>
       <section class="posts">
-        <article class="posts__item">
-          <img src="img/panorama-mobile@1x.jpg" alt="visitor's pictures">
+        <div class="posts__panorama">
+          <!-- <img src="img/panorama-mobile@1x.jpg" alt="visitor's pictures"> -->
+        </div>
+        <article class="posts__title">
           <b class="posts__author">Анна</b>
           <span class="posts__time">(5 минут назад)</span>
           <p class="posts__comment">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
           <div class="posts__like">Нравится: 215</div>
         </article>
-        <article class="posts__item">
-          <img src="img/photo-1-mobile@1x.jpg" alt="visitor's pictures">
-          <b class="posts__author">Левон</b>
-          <span class="posts__time">(5 часов назад)</span>
-          <p class="posts__comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-          <div class="posts__like">Нравится: 356</div>
-        </article>
-        <article class="posts__item">
-          <img src="img/photo-2-mobile@1x.jpg" alt="visitor's pictures">
-          <b class="posts__author">Антон</b>
-          <span class="posts__time">(12 часов назад)</span>
-          <p class="posts__comment">Соседи будут рады!</p>
-          <div class="posts__like">Нравится: 666</div>
-        </article>
-        <article class="posts__item">
-          <img src="img/photo-3-mobile@1x.jpg" alt="visitor's pictures">
-          <b class="posts__author">Борис</b>
-          <span class="posts__time">(20 часов назад)</span>
-          <p class="posts__comment">Здесь могла быть ваша цитата о высоком и вечном</p>
-          <div class="posts__like">Нравится: 215</div>
-        </article>
-        <article class="posts__item">
-          <img src="img/photo-4-mobile@1x.jpg" alt="visitor's pictures">
-          <b class="posts__author">Сергей</b>
-          <span class="posts__time">(25 часов назад)</span>
-          <p class="posts__comment">Самая кубанская в мире!</p>
-          <div class="posts__like">Нравится: 4</div>
-        </article>
-        <article class="posts__item">
-          <img src="img/photo-5-mobile@1x.jpg" alt="visitor's pictures">
-          <b class="posts__author">Максим</b>
-          <span class="posts__time">(40 часов назад)</span>
-          <p class="posts__comment">Где снег-то?</p>
-          <div class="posts__like">Нравится: 150</div>
-        </article>
-        <article class="posts__item">
-          <img src="img/photo-6-mobile@1x.jpg" alt="visitor's pictures">
-          <b class="posts__author">Надежда</b>
-          <span class="posts__time">(45 часов назад)</span>
-          <p class="posts__comment">Всем GM и взаимные лайки!</p>
-          <div class="posts__like">Нравится: 2560</div>
-        </article>
-      </section>
-      <div class="filter-post">
-        <p>Затмите их всех! Выкладывайте все, что накопилось в телефоне</p>
-        <div class="filter-post__filter">
-          <form method="post" action="#" class="filter-post__form">
-            <div class="filter-post__picture"><img src="img/photo-7-mobile@1x.jpg" alt="Пикча"></div>
-            <div class="button-group">
-              <ul class="button-group__list">
-                <li></li>
-                <li></li>
-                <li></li>
-              </ul>
+        <div class="posts__inner">
+          <article class="posts__item">
+            <div class="posts__img">
+              <img src="img/photo-1-mobile@1x.jpg" alt="visitor's pictures">
             </div>
-            <input type="range">
-            <input type="submit" value="Запостить">
-            <input type="reset" value="Отмена">
-          </form>
+            <b class="posts__author">Левон</b>
+            <span class="posts__time">(5 часов назад)</span>
+            <p class="posts__comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+            <div class="posts__like">Нравится: 356</div>
+          </article>
+          <article class="posts__item">
+            <div class="posts__img">
+              <img src="img/photo-2-mobile@1x.jpg" alt="visitor's pictures">
+            </div>
+            <b class="posts__author">Антон</b>
+            <span class="posts__time">(12 часов назад)</span>
+            <p class="posts__comment">Соседи будут рады!</p>
+            <div class="posts__like">Нравится: 666</div>
+          </article>
+          <article class="posts__item">
+            <div class="posts__img">
+              <img src="img/photo-3-mobile@1x.jpg" alt="visitor's pictures">
+            </div>
+            <b class="posts__author">Борис</b>
+            <span class="posts__time">(20 часов назад)</span>
+            <p class="posts__comment">Здесь могла быть ваша цитата о высоком и вечном</p>
+            <div class="posts__like">Нравится: 215</div>
+          </article>
+          <article class="posts__item">
+            <div class="posts__img">
+              <img src="img/photo-4-mobile@1x.jpg" alt="visitor's pictures">
+            </div>
+            <b class="posts__author">Сергей</b>
+            <span class="posts__time">(25 часов назад)</span>
+            <p class="posts__comment">Самая кубанская в мире!</p>
+            <div class="posts__like">Нравится: 4</div>
+          </article>
+          <article class="posts__item">
+            <div class="posts__img">
+              <img src="img/photo-5-mobile@1x.jpg" alt="visitor's pictures">
+            </div>
+            <b class="posts__author">Максим</b>
+            <span class="posts__time">(40 часов назад)</span>
+            <p class="posts__comment">Где снег-то?</p>
+            <div class="posts__like">Нравится: 150</div>
+          </article>
+          <article class="posts__item">
+            <div class="posts__img">
+              <img src="img/photo-6-mobile@1x.jpg" alt="visitor's pictures">
+            </div>
+            <b class="posts__author">Надежда</b>
+            <span class="posts__time">(45 часов назад)</span>
+            <p class="posts__comment">Всем GM и взаимные лайки!</p>
+            <div class="posts__like">Нравится: 2560</div>
+          </article>
         </div>
+      </section>
+      <h2 class="page-main__title">Затмите их всех! Выкладывайте все, что накопилось в телефоне</h2>
+      <div class="filter-post">
+        <form class="filter-post__form" method="post" action="#">
+          <div class="filter-post__picture">
+            <img src="img/photo-7-mobile@1x.jpg" alt="Пикча">
+          </div>
+          <div class="filter-post__items">
+            <div class="filter-post__item">
+              <button type="button">12341234</button>
+              <input class="filter-post__range" type="range">
+            </div>
+            <div class="filter-post__item">
+              <button type="button">13241234</button>
+              <input class="filter-post__range" type="range">
+            </div>
+            <div class="filter-post__item">
+              <button type="button">12341234</button>
+              <input class="filter-post__range" type="range">
+            </div>
+            <input class="filter-post__range filter-post__range--mobile" type="range">
+            <div class="filter-post__buttons">
+              <input class="filter-post__btn" type="submit" value="Запостить">
+              <input class="filter-post__btn filter-post__btn--reset" type="reset" value="Отмена">
+            </div>
+          </div>
+        </form>
       </div>
     </div>
   </main>
   <footer class="page-footer">
-    <div class="page-footer__inner">
-      <div class="logo">
-        <a href="#"><img src="img/logo-pink-blue-mobile.svg" alt="Pink" class="logo__picture"></a>
-      </div>
-      <div class="social-links">
-        <a href="#" class="social-links__item--tw"></a>
-        <a href="#" class="social-links__item--fb"></a>
-        <a href="#" class="social-links__item--yt"></a>
-      </div>
-      <div class="copyright">
-        <span class="copyright__item">Разработано</span>
-        <a href="#" class="copyright__link"><img src="img/htmlacademy.svg" alt="HtmlAcademy" width="50" height="50"></a>
-      </div>
+    <div class="logo">
+      <a class="logo__link" href="#">
+        <img class="logo__picture" src="img/logo-pink-blue-mobile.svg" alt="Pink">
+      </a>
+    </div>
+    <div class="social-links">
+      <a class="social-links__item social-links__item--tw" href="#"></a>
+      <a class="social-links__item social-links__item--fb" href="#"></a>
+      <a class="social-links__item social-links__item--yt" href="#"></a>
+    </div>
+    <div class="copyright">
+      <span class="copyright__item">Разработано</span>
+      <a class="copyright__link" href="#">
+        <img src="img/htmlacademy.svg" alt="HtmlAcademy" width="50" height="50">
+      </a>
     </div>
   </footer>
 </body>

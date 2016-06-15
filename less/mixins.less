@@ -1,7 +1,15 @@
-.font-open-sans(@size; @font-color; @font-weight; @line-height) {
-  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+.set-font(@size; @font-color; @font-weight; @line-height) {
   font-size: @size;
   color: @font-color;
   font-weight: @font-weight;
   line-height: @line-height;
+}
+
+.container-desktop () {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.container-mobile () {
+  min-width: 320px;
 }

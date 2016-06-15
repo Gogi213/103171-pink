@@ -1,8 +1,33 @@
 .slider {
-  outline: 1px solid red;
-  .font-open-sans(14px; @dark-blue; normal; 30px);
+  .set-font(14px; @dark-blue; normal; 30px);
+  text-align: center;
 }
 
-.slider__slides b {
-  .font-open-sans(18px; black; bold; 30px);
+.slider__slides {
+  b {
+  .set-font(18px; black; bold; 30px);
+  }
+}
+
+.slider__describe {
+  display: none;
+}
+
+.slider__first-slide {
+  @media @tablet-widths {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.slider__blockquote {
+  @media @tablet-widths {
+    order: -1;
+  }
+}
+
+.slider__describe {
+  @media @tablet-widths {
+    display: block;
+  }
 }
