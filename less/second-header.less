@@ -39,6 +39,12 @@
 .second-header__title {
   margin: 0;
   text-align: center;
+  &--alt {
+    text-align: left;
+    @media @mobile-widths {
+      display: none;
+    }
+  }
   @media @tablet-widths {
     .set-font(50px; white; lighter; normal);
   }
