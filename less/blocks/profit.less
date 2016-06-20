@@ -1,26 +1,78 @@
 .profit {
-  .set-font(14px; @dark-blue; lighter; 24px);
+  .set-font(14px; @dark-blue; normal; 24px);
   display: none;
+  @media @tablet-widths {
+    min-height: 359px;
+    display: flex;
+  }
+
+  @media @desktop-widths {
+    .set-font(18px; @dark-blue; normal; 30px);
+    background-color: @grey;
+    min-height: 460px;
+  }
+}
+
+.profit_add {
+  @media @desktop-widths {
+    display: none;
+  }
 }
 
 .profit__title {
-  .set-font(40px; black; bold; 40px);
+  .set-font(30px; black; bold; 36px);
+  padding-top: 64px;
+  margin-bottom: 0;
+  @media @desktop-widths {
+    padding-top: 108px;
+  }
+}
+
+.profit__description {
+  margin-top: 11px;
+  padding-right: 18%;
+
+  @media @tablet-widths {
+    margin-top: 11px;
+    padding-right: 15%;
+    margin-bottom: 10px;
+  }
+
+  @media @desktop-widths {
+    margin-top: 22px;
+    margin-bottom: 29px;
+    width: 74%;
+  }
 }
 
 .profit__link {
-  .set-font(14px; @pink; lighter; 24px);
-}
-
-.profit {
-  @media @tablet-widths {
-    display: flex;
+  .set-font(18px; @pink; normal; 24px);
+  @media @tablet-widths-max {
+    font-size: 14px;
   }
 }
 
 .profit__stopwatch {
   @media @tablet-widths {
     width: 100%;
+  }
+
+  @media @desktop-widths {
+    width: 71%;
+  }
+
+  @media @tablet-widths-max {
     text-align: center;
+  }
+
+  img {
+    padding-right: 28px;
+    padding-top: 57px;
+    @media @desktop-widths {
+      padding-top: 47px;
+      padding-left: 131px;
+      width: 298px;
+    }
   }
 }
 

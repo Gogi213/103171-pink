@@ -1,119 +1,124 @@
 .good {
-  .set-font(14px; @dark-blue; normal; 30px);
+  .set-font(14px; @dark-blue; normal; 24px);
   background-color: @grey;
-  overflow: hidden;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+@media @mobile-widths {
+  overflow: hidden;
 }
 
-.good__item {
-  text-align: center;
-}
-
-.good__item:last-child {
-  padding-bottom: 125px;
-}
-
-.good__item {
-  b {
-  .set-font(18px; black; bold; 30px);
-  }
-  h2 {
-    @media @desktop-widths {
-      white-space: nowrap;
-    }
-  }
-}
-
-.good__img {
-  background: url("../img/iphone-screen-mobile@1x.png") no-repeat;
-  width: 162px;
-  height: 277px;
-  margin: auto;
-  &--desktop {
-    @media @tablet-widths {
-      display: none;
-    }
-    @media @mobile-widths {
-      display: none;
-    }
-  }
-}
-
-.good__img--desktop:first-child {
-  background: url("../img/iphone-screen-bw-desktop.png") no-repeat;
-  order: -3;
-}
-
-.good__img--desktop:nth-child(2) {
-  background: url("../img/iphone-screen-desktop.png") no-repeat;
-  order: -2;
-}
-
-.good {
   @media @tablet-widths {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-around;
     flex-basis: 50%;
   }
+
+  @media @tablet-widths and @tablet-widths-max {
+    width: 426px;
+  }
+
+  @media @desktop-widths {
+  .set-font(18px; @dark-blue; normal; 30px);
+   flex-direction: row;
+   flex-wrap: wrap;
+   padding: 0 10.5%;
+   justify-content: space-between;
+  }
+}
+
+.good__item {
+  text-align: center;
+  padding: 0 10% 1px 10%;
+  @media @tablet-widths {
+    text-align: left;
+    min-height: 126px;
+    padding: 0 0 0 4%;
+  }
+
+  @media @desktop-widths {
+    text-align: center;
+    padding: 0 39px;
+    flex-basis: 30.5%;
+  }
+
+  h2 {
+    .set-font(18px; black; bold; 24px);
+    line-height: 21px;
+    @media @desktop-widths {
+      .set-font(30px; black; bold; 30px);
+      padding-top: 5px;
+    }
+  }
 }
 
 .good__img {
+  @media @mobile-widths {
+    width: 157px;
+    height: 320px;
+    margin-top: 27px;
+    margin-bottom: -43px
+  }
+
   @media @tablet-widths {
-    width: 187px;
-    height: 270px;
     text-align: center;
   }
+
+  @media @desktop-widths {
+    order: -1;
+    flex-basis: 30.5%;
+    margin-top: -93px;
+  }
+
+  &--mobile {
+    @media @tablet-widths {
+      display: none;
+    }
+  }
+
+  &--tablet {
+    display: none;
+    margin-top: -58px;
+    margin-left: 26px;
+    @media @tablet-widths and @tablet-widths-max {
+      display: block;
+    }
+  }
+
+  &--desktop {
+    @media @tablet-widths {
+      display: none;
+    }
+
+    @media @mobile-widths {
+      display: none;
+    }
+
+    @media @desktop-widths {
+      display: block;
+    }
+  }
+}
+
+.good__img--desktop:first-child {
+  order: -3;
+}
+
+.good__img--desktop:nth-child(2) {
+  order: -2;
 }
 
 .good__wrapper {
   @media @tablet-widths {
     flex-basis: 50%;
   }
-}
 
-.good__item {
-  @media @tablet-widths-max {
-    text-align: left;
-  }
-}
-
-.good {
-  @media @desktop-widths {
-   flex-direction: row;
-   flex-wrap: wrap;
-  }
-}
-
-.good__img--desktop {
-  @media @desktop-widths {
-    display: block;
-    flex-basis: 29%;
-    height: 400px;
-  }
-}
-
-.good__img {
-  @media @desktop-widths {
-    background: url("../img/iphone-screen-smile-desktop.png") no-repeat;
-    order: -1;
-    flex-basis: 31%;
-    text-align: center;
-    margin: 0;
-    height: 303px;
-  }
-}
-
-.good__wrapper {
   @media @desktop-widths {
     display: flex;
     flex-basis: 100%;
-    justify-content: space-around;
-  }
-}
-
-.good__item {
-  @media @desktop-widths {
-    max-width: 259px;
+    justify-content: space-between;
+    padding-top: 27px;
   }
 }

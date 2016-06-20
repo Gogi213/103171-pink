@@ -1,6 +1,14 @@
 .price-slider {
+  min-height: 292px;
   .set-font(14px; @dark-blue; normal; 30px);
   background-color: @grey;
+  @media @mobile-widths {
+    height: 431px;
+  }
+
+  @media @desktop-widths {
+    min-height: 440px;
+  }
 }
 
 .price-slider__first-slide {

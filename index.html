@@ -18,7 +18,7 @@
       <a class="main-nav__link" href="index.html">Главная</a>
       <a class="main-nav__link" href="photo.html">Фотографии</a>
       <a class="main-nav__link" href="form.html">Конкурс</a>
-      <a class="main-nav__link" href="http://htmlacademy.ru">Html Academy</a>
+      <a class="main-nav__link" href="http://htmlacademy.ru">HTML Academy</a>
     </nav>
   </header>
   <main class="page-main">
@@ -27,41 +27,36 @@
         <br>на жизнь
         <br>иначе!
       </h1>
-      <div class="download">
-        <div class="download__wrapper">
-          <a class="download__btn">Скачать приложение</a>
-          <div class="download__list">
-            <a class="download__link" href="#">123</a>
-            <a class="download__link" href="#">234</a>
-            <a class="download__link" href="#">345</a>
-          </div>
-          <p class="download__available">Доступно для Iphone, Ipad, Android, Windows Phone, OS x, Windows 8</p>
+      <div class="download">-
+        <a class="download__btn">Скачать приложение</a>
+        <div class="download__list">
+          <a class="download__link" href="#">123</a>
+          <a class="download__link" href="#">234</a>
+          <a class="download__link" href="#">345</a>
         </div>
+        <p class="download__available">Доступно для Iphone, Ipad, Android, Windows Phone, OS x, Windows 8</p>
       </div>
     </div>
     <div class="page-main__inner">
       <!-- Здесь download будет менять download-alt  -->
       <!-- Работает только для мобильной версии. -->
       <div class="download-alt">
-        <div class="download-alt__wrapper">
-          <a class="download__btn">Скачать приложение</a>
-          <div class="download-alt__list">
-            <a class="download-alt__link" href="#">123</a>
-            <a class="download-alt__link" href="#">234</a>
-            <a class="download-alt__link" href="#">345</a>
-          </div>
-          <p class="download-alt__available">Доступно для Iphone, Ipad, Android, Windows Phone, OS x, Windows 8</p>
+        <a class="download-alt__btn">Скачать приложение</a>
+        <div class="download-alt__list">
+          <a class="download-alt__link" href="#">123</a>
+          <a class="download-alt__link" href="#">234</a>
+          <a class="download-alt__link" href="#">345</a>
         </div>
+        <p class="download-alt__available">Доступно для Iphone, Ipad, Android, Windows Phone, OS x, Windows 8</p>
       </div>
       <div class="content">
         <div class="content__promo">
-          <p>Устали от серости мегаполиса?</p>
-          <span>Нам есть, что вам</span>
-          <span> предложить!</span>
+          <h2>Устали от серости мегаполиса?</h2>
+          <h2>Нам есть, что вам<br class="content__add"> предложить!</h2>
         </div>
         <div class="good">
-          <div class="good__img good__img--desktop"></div>
-          <div class="good__img good__img--desktop"></div>
+          <img class="good__img good__img--desktop" src="img/iphone-screen-1-desktop@1x.png" alt="iphone-bw">
+          <img class="good__img good__img--desktop" src="img/iphone-screen-2-desktop@1x.png" alt="iphone-pink">
           <div class="good__wrapper">
             <article class="good__item">
               <h2>Поднимает настроение</h2>
@@ -76,19 +71,22 @@
               <p>Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
             </article>
           </div>
-          <div class="good__img"></div>
+          <img class="good__img good__img--desktop" src="img/iphone-screen-3-desktop@1x.png" alt="smile">
+          <img class="good__img good__img--mobile" src="img/iphone-screen-mobile@1x.png" alt="smile">
+          <img class="good__img good__img--tablet" src="img/iphone-screen-3-tablet@1x.png" alt="smile">
         </div>
         <div class="profit">
           <div class="profit__stopwatch">
             <img src="img/stopwatch-tablet.png" alt="stopwatch">
           </div>
           <div class="profit__wrapper">
-            <b class="profit__title">Эффект на 24 часа!</b>
+            <h3 class="profit__title">Эффект<br class="profit_add"> на 24 часа!</h3>
             <p class="profit__description">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
             <a class="profit__link" href="#">Узнать больше об исследовании</a>
           </div>
         </div>
         <div class="slider">
+          <span class="slider__paginator"></span>
           <input type="radio" id="sliderPage1" name="toggle" checked>
           <input type="radio" id="sliderPage2" name="toggle">
           <input type="radio" id="sliderPage3" name="toggle">
@@ -99,18 +97,31 @@
           </div>
           <div class="slider__inner">
             <div class="slider__slides">
-              <div class="slider__first-slide">
-                <b class="slider__name">Николай Петров</b>
+              <div class="slider__item">
+                <p class="slider__name">Николай Петров</p>
                 <span class="slider__describe">25 лет, водитель трамвая</span>
-                <blockquote class="slider__blockquote">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</blockquote>
+                <blockquote class="slider__blockquote">
+                  <span class="slider__add">«</span>Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!
+                  <span class="slider__add">»</span>
+                </blockquote>
+              </div>
+              <div class="slider__item">
+                <p class="slider__name">Николай Петров</p>
+                <span class="slider__describe">25 лет, водитель трамвая</span>
+                <blockquote class="slider__blockquote">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</blockquote>
+              </div>
+              <div class="slider__item">
+                <p class="slider__name">Николай Петров</p>
+                <span class="slider__describe">25 лет, водитель трамвая</span>
+                <blockquote class="slider__blockquote">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</blockquote>
               </div>
             </div>
           </div>
         </div>
         <div class="price-slider">
-          <input type="radio" id="sliderPage4" name="toggle">
-          <input type="radio" id="sliderPage5" name="toggle" checked>
-          <input type="radio" id="sliderPage6" name="toggle">
+          <input type="radio" id="sliderPage4" name="toggle1">
+          <input type="radio" id="sliderPage5" name="toggle1" checked>
+          <input type="radio" id="sliderPage6" name="toggle1">
           <div class="price-slider__controls">
             <label for="sliderPage4"></label>
             <label for="sliderPage5"></label>
@@ -179,7 +190,7 @@
       <div class="contacts__wrapper">
         <b>Приезжайте в гости:</b>
         <br>
-        <span class="contacts__our-contacts">Ул. Большая Конюшенная, 19/8</span>
+        <span class="contacts__our-contacts">Ул. Большая<br> Конюшенная, 19/8</span>
       </div>
     </div>
     <div class="map">
