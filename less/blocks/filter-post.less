@@ -10,6 +10,12 @@
   @media @tablet-widths {
     height: 510px;
   }
+
+  @media @desktop-widths {
+    height: 514px;
+    width: 939px;
+    margin: 0 auto;
+  }
 }
 
 .filter-post__inner {
@@ -18,40 +24,82 @@
     margin: 0 auto;
     display: flex;
   }
+
+  @media @desktop-widths {
+    margin-left: 55px;
+  }
 }
 
 .filter-post__item {
-  &:nth-child(2) {
-    @media @tablet-widths {
-      padding-top: 17px;
-    }
-  }
-
-  &:last-child {
-    padding-top: 13px;
-    button {
-      @media @tablet-widths{
-        width: 29px;
-      }
-    }
-  }
-
   @media @tablet-widths {
     border-bottom: 1px solid @dark-grey;
     padding-bottom: 12px;
   }
 
-  button {
-    background: none;
-    border: none;
-    width: 60px;
-    height: 42px;
-    margin-top: 31px;
-    @media @tablet-widths {
-      width: 37px;
-      height: 31px;
-      margin-top: 8px;
-      margin-left: 10px;
+  @media @desktop-widths {
+    padding-bottom: 2px;
+  }
+
+  &:first-child {
+    button {
+      @media @mobile-widths {
+        margin-top: 30px;
+      }
+
+      @media @tablet-widths {
+        margin-top: 8px;
+        margin-left: 8px;
+      }
+
+      @media @desktop-widths {
+        width: 59px;
+        margin-top: -4px;
+        margin-left: -1px;
+      }
+    }
+  }
+
+  &:nth-child(2) {
+    @media @tablet-widths-max {
+      padding-top: 17px;
+    }
+
+    button {
+      @media @desktop-widths {
+        width: 59px;
+        margin-top: 15px;
+        margin-left: 0;
+      }
+    }
+
+
+    .filter-post__range {
+      @media @tablet-widths {
+        margin-top: 10px;
+      }
+      @media @desktop-widths {
+        margin-top: 27px;
+      }
+    }
+  }
+
+  &:last-child {
+    padding-top: 13px;
+    @media @desktop-widths {
+      padding-bottom: 9px;
+    }
+
+    button {
+      @media @tablet-widths{
+        width: 29px;
+        margin-left: 14px;
+      }
+
+      @media @desktop-widths {
+        width: 59px;
+        margin-top: 5px;
+        margin-left: -1px;
+      }
     }
   }
 
@@ -63,6 +111,24 @@
 
     &:nth-child(3) button {
       margin-top: 26px;
+    }
+  }
+
+  button {
+    background: none;
+    border: none;
+    width: 60px;
+    height: 42px;
+    margin-top: 31px;
+    @media @mobile-widths {
+      margin-top: 15px;
+    }
+
+    @media @tablet-widths {
+      width: 37px;
+      height: 31px;
+      margin-top: 8px;
+      margin-left: 10px;
     }
   }
 }
@@ -77,6 +143,11 @@
     float: right;
     margin-right: 3px;
     margin-top: 10px;
+  }
+
+  @media @desktop-widths {
+    width: 287px;
+    margin-right: 31px;
   }
 
   &--mobile {
@@ -97,7 +168,17 @@
   @media @tablet-widths {
     display: flex;
     padding-left: 6%;
-    padding-top: 8%;
+    padding-top: 56px;
+    margin: 0 auto;
+  }
+
+  @media @tablet-widths-max {
+    width: 617px;
+  }
+
+  @media @desktop-widths {
+    padding-left: 80px;
+    padding-top: 58px;
   }
 }
 
@@ -119,6 +200,13 @@
     margin-left: 15px;
     border-top: none;
   }
+
+  @media @desktop-widths {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 456px;
+    margin-top: 144px;
+  }
 }
 
 .filter-post__btn {
@@ -132,6 +220,11 @@
     padding: 14px 77px;
   }
 
+  @media @desktop-widths {
+    padding: 15px 40px;
+    margin-left: 45px;
+  }
+
   &--reset {
     margin-top: 12px;
     padding: 14px 102px;
@@ -140,6 +233,11 @@
     @media @tablet-widths {
       padding: 14px 89px;
       margin-top: 26px;
+    }
+
+    @media @desktop-widths {
+      margin: 0;
+      padding: 14px 53px;
     }
   }
 }

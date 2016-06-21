@@ -36,7 +36,10 @@
   }
 
   @media @desktop-widths {
-    min-height: 853px;
+    min-height: 395px;
+    &--picture {
+      min-height: 853px;
+    }
   }
 }
 
@@ -47,6 +50,11 @@
     .set-font(50px; white; lighter; 60px);
     padding-top: 180px;
   }
+
+  @media @desktop-widths {
+    padding-top: 173px;
+  }
+
   &--alt {
     .set-font(40px; white; lighter; 49px);
     display: inline-block;
