@@ -20,6 +20,7 @@
   }
 
   @media @tablet-widths {
+    min-height: 440px;
     &--picture {
       min-height: 729px;
     }
@@ -42,6 +43,10 @@
 .second-header__title {
   margin: 0;
   text-align: center;
+  @media @tablet-widths {
+    .set-font(50px; white; lighter; 60px);
+    padding-top: 180px;
+  }
   &--alt {
     .set-font(40px; white; lighter; 49px);
     display: inline-block;
@@ -64,8 +69,8 @@
 
   &--small {
     @media @mobile-widths {
-    .set-font(24px; white; lighter; normal);
-    padding-top: 84px;
+    .set-font(24px; white; lighter; 30px);
+    padding-top: 95px;
     }
   }
 }

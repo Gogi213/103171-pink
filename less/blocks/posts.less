@@ -1,8 +1,29 @@
 .posts {
   .set-font(14px; @dark-blue; normal; 24px);
+  article {
+    position: relative;
+    @media @mobile-widths {
+      width: 280px;
+      margin: 0 auto 20px;
+    }
+  }
 }
 
 .posts__panorama {
+  position: relative;
+  &::after {
+    content: '';
+    position: absolute;
+    background: url("../img/panorama-absolute.jpg");
+    width: 140px;
+    height: 36px;
+    top: 0;
+    right: 20px;
+    @media @tablet-widths {
+      top: 57px;
+      right: 5.6%;
+    }
+  }
   @media @mobile-widths {
     background: url("../img/panorama-mobile@1x.jpg") no-repeat;
     height: 137px;
@@ -26,33 +47,128 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: 89%;
   margin: auto;
+  @media @mobile-widths {
+    width: 280px;
+  }
+
   @media @tablet-widths {
     justify-content: space-between;
+    width: 617px;
   }
 }
 
 .posts__item {
   background-color: @grey;
   margin-bottom: 20px;
+  &::after {
+    content: '';
+    position: absolute;
+    width: 13px;
+    height: 12px;
+    background: url("../img/icon-heart.svg") no-repeat;
+    @media @mobile-widths {
+      left: 6%;
+      bottom: 26px;
+    }
+
+    @media @tablet-widths {
+      right: 32px;
+      bottom: 28px;
+    }
+  }
+
   @media @mobile-widths {
     flex-basis: 100%;
   }
 
   @media @tablet-widths {
-    flex-basis: 48%;
+    flex-basis: 48.5%;
+    height: 454px;
   }
 
   @media @desktop-widths {
     flex-basis: 31%;
+  }
+
+  .posts__like {
+    @media @tablet-widths {
+      position: absolute;
+      bottom: 21px;
+      left: 27px;
+    }
+  }
+}
+
+.posts__content {
+  padding: 20px 0 0 18px;
+  box-sizing: border-box;
+  @media @tablet-widths {
+    padding: 26px 0 0 27px;
   }
 }
 
 .posts__title {
   background-color: @grey;
   margin: auto;
-  width: 89%;
+  @media @mobile-widths {
+    padding: 18px 0 0 18px;
+    box-sizing: border-box;
+  }
+
+  @media @tablet-widths {
+    width: 617px;
+    height: 121px;
+    margin: 0 auto 50px;
+    padding: 24px 0px 0px 27px;
+    box-sizing: border-box;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 13px;
+    height: 12px;
+    background: url("../img/icon-heart.svg") no-repeat;
+    @media @mobile-widths {
+      left: 6%;
+      bottom: 26px;
+    }
+
+    @media @tablet-widths {
+      right: 28px;
+      top: 30px;
+    }
+  }
+
+  .posts__like {
+    @media @tablet-widths {
+      top: 24px;
+      right: 57px;
+      position: absolute;
+    }
+  }
+}
+
+.posts__picture {
+  display: none;
+  @media @mobile-widths {
+    &--mobile {
+      display: block;
+    }
+  }
+
+  @media @tablet-widths and @tablet-widths-max {
+    &--tablet {
+      display: block;
+    }
+  }
+
+  @media @desktop-widths {
+    &--desktop {
+      display: block;
+    }
+  }
 }
 
 .posts__author {
@@ -61,14 +177,27 @@
 
 .posts__time {
   text-transform: uppercase;
+  // @media @mobile-widths {
+    font-weight: lighter;
+    font-size: 12px
+  // }
+}
+
+.posts__comment {
+  @media @mobile-widths {
+    margin: 0;
+  }
+
+  @media @tablet-widths {
+    margin-top: -1px;
+    padding-right: 15px;
+  }
 }
 
 .posts__like {
-  .set-font(12px; @pink; normal; 24px)
-}
-
-.posts__wrapper {
-  width: 89%;        /* 640px / 768px ~= 84% */
-  max-width: 1200px;  /* 960px / .84 ~= 1142px (центровка начнётся чуть раньше 1200px) */
-  margin: 0 auto;
+  .set-font(12px; @pink; normal; 24px);
+  text-transform: uppercase;
+  @media @mobile-widths {
+    padding: 9px 30px 19px 30px;
+  }
 }
