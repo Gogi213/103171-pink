@@ -1,24 +1,108 @@
 .price-slider {
-  min-height: 292px;
   .set-font(14px; @dark-blue; normal; 30px);
   background-color: @grey;
-  @media @mobile-widths {
-    height: 431px;
+  width:100%;
+  @media @tablet-widths {
+    min-height: 296px;
   }
 
   @media @desktop-widths {
-    min-height: 440px;
+    min-height: 442px;
   }
-}
+  
+  input {
+    display: none;
+  }
 
-.price-slider__first-slide {
+  table {
+    width: 300%;
+  }
+
   th {
     background-color: @dark-blue;
+    color: white;
+    height: 95px;
+    text-transform: uppercase;
   }
-  b {
-   .set-font(18px; white; bold; 30px);
+
+  tr {
+    transition-duration: 0.4s;
+    transition-timing-function: ease-in-out;
+
   }
+
+  td {
+    .set-font(14px; @dark-blue; normal; 30px);
+    text-transform: uppercase;
+    background: grey;
+    padding: 14px 122px 15px 22px;
+    text-align: left;
+    background-color: white;
+    white-space: nowrap;
+  }
+
+  p {
+    .set-font(18px; white; bold; 30px);
+    margin: 2px 0 2px;
+  }
+
   span {
     .set-font(24px; white; 100; 30px);
   }
+}
+
+.price-slider__inner {
+  width: 320px;
+  overflow: hidden;
+  margin: 0 auto;
+  position: relative;
+  @media @mobile-widths {
+    padding-top: 53px;
+    min-height: 382px;
+  }
+}
+
+.price-slider__controls {
+  position: absolute;
+  bottom: 39px;
+  left: 123px;
+  label {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin: 0 8px;
+  background: #ccc;
+  cursor: pointer;
+  border-radius: 50%;
+  }
+}
+
+#sliderPage4:checked ~ .price-slider__controls label[for="sliderPage4"] {
+  background-color: white;
+  box-shadow: 0 0 0 3px @dark-blue;
+  margin-bottom: 0;
+}
+
+#sliderPage5:checked ~ .price-slider__controls label[for="sliderPage5"] {
+  background-color: white;
+  box-shadow: 0 0 0 3px @dark-blue;
+  margin-bottom: 0;
+}
+
+#sliderPage6:checked ~ .price-slider__controls label[for="sliderPage6"] {
+  background-color: white;
+  box-shadow: 0 0 0 3px @dark-blue;
+  margin-bottom: 0;
+}
+
+#sliderPage4:checked ~ table tr {
+  transform: translatex(-23.2%);
+}
+
+#sliderPage5:checked ~ table tr {
+  transform: translatex(-48.3%);
+}
+
+#sliderPage6:checked ~ table tr {
+  transform: translatex(-73.3%);
 }
