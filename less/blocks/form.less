@@ -19,6 +19,10 @@
 
     margin-bottom: 49px;
   }
+
+  @media @desktop-widths {
+    width: 942px;
+  }
 }
 
 .form__item {
@@ -55,7 +59,6 @@
   }
 
   &:first-child {
-
     @media @mobile-widths {
       .container();
       height: 368px;
@@ -65,6 +68,11 @@
       height: 351px;
       border: none;
       order: -5;
+    }
+
+    @media @desktop-widths {
+      flex-basis: 435px;
+      margin-left: 0;
     }
 
     .input-group__label {
@@ -85,20 +93,18 @@
         margin-bottom: 54px;
       }
     }
-
-    @media @desktop-widths {
-      flex-basis: 47%;
-      margin-left: 0;
-    }
   }
 
   &:nth-child(2) {
-    min-height: 608px;
     .form__title {
       &--legend {
         @media @tablet-widths {
           margin-left: 94px;
           padding: 0px 29px;
+        }
+
+        @media @desktop-widths {
+          margin-left: 252px;
         }
       }
     }
@@ -109,6 +115,13 @@
       font-size: 18px;
       @media @tablet-widths {
         padding: 32px 0 26px 119px;
+      }
+
+      @media @desktop-widths {
+        padding: 31px 0 23px 0px;
+        margin-left: 116px;
+        margin-bottom: 4px;
+        width: 198px;
       }
     }
 
@@ -139,7 +152,7 @@
         border: 2px solid #e5e5e5;
         @media @tablet-widths {
           top: -5px;
-          left: -58px;
+          left: -60px;
         }
       }
     }
@@ -153,15 +166,24 @@
       transform: rotate(-45deg) translate(-1px, 11px);
     }
 
+    @media @mobile-widths {
+      height: 608px;
+    }
+
     @media @tablet-widths {
       order: -2;
-      min-height: 537px;
+      height: 537px;
       margin-top: 57px;
       padding-top: 19px;
     }
+
     @media @desktop-widths {
-      flex-basis: 47%;
+      flex-wrap: wrap;
+      flex-direction: column;
+      display: flex;
+      flex-basis: 100%;
       margin-right: 0;
+      height: 216px;
     }
   }
 
@@ -173,6 +195,10 @@
         @media @tablet-widths {
           margin-left: 176px;
           padding: 0 35px;
+        }
+
+        @media @desktop-widths {
+          margin-left: 276px;
         }
       }
     }
@@ -213,25 +239,49 @@
       }
 
     @media @desktop-widths {
+      min-height: 166px;
+      justify-content: space-between;
+      margin-top: 1px;
       display: flex;
+      flex-basis: 100%;
+      padding: 0 59px;
+      .input-group {
+        margin: 33px 0 0;
+        flex-basis: 375px;
+      }
     }
   }
 
   &:nth-child(4) {
     min-height: 337px;
+    @media @tablet-widths {
+      min-height: 279px;
+      padding-top: 25px;
+      order: -4;
+    }
+
+    @media @desktop-widths {
+      flex-basis: 432px;
+      margin-right: 0;
+      margin-top: -12px;
+      padding-top: 27px;
+      height: 277px;
+    }
+
     .form__title {
       &--legend {
         @media @tablet-widths {
           margin-left: 124px;
           padding: 0 27px;
         }
+
+        @media @desktop-widths {
+          margin-left: 27px;
+          padding: 0 27px;
+        }
       }
     }
-    @media @tablet-widths {
-      min-height: 279px;
-      padding-top: 25px;
-      order: -4;
-    }
+
     .input-group {
       font-size: 18px;
       padding: 26px 88px;
@@ -239,11 +289,15 @@
         padding: 26px 119px;
       }
 
-      input[type="radio"]:checked ~ label::after {
-        transform: scale(1);
-        opacity: 1;
+      @media @desktop-widths {
+        padding: 25px 132px;
       }
+
+    input[type="radio"]:checked ~ label::after {
+      transform: scale(1);
+      opacity: 1;
     }
+  }
 
     .input-group__label {
       &::before {
@@ -289,6 +343,10 @@
           margin-left: 181px;
           padding: 0 37px;
         }
+
+        @media @desktop-widths {
+          margin-left: 340px;
+        }
       }
     }
 
@@ -298,6 +356,10 @@
       flex-direction: column;
       @media @tablet-widths {
         width: 81%;
+      }
+
+      @media @desktop-widths {
+        width: 87.2%;
       }
 
       input {
@@ -314,6 +376,12 @@
       padding-top: 33px;
       margin-top: 57px;
       margin-bottom: 68px;
+    }
+
+    @media @desktop-widths {
+      flex-basis: 100%;
+      padding-top: 29px;
+      min-height: 192px;
     }
   }
 
@@ -377,6 +445,10 @@ textarea {
   line-height: 30px;
   @media @tablet-widths {
     padding: 14px 18px 115px;
+  }
+
+  @media @desktop-widths {
+    padding: 14px 18px 51px;
   }
 }
 
