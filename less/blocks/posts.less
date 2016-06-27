@@ -1,0 +1,223 @@
+.posts {
+  .set-font(14px; @dark-blue; normal; 24px);
+  article {
+    position: relative;
+    @media @mobile-widths {
+      width: 280px;
+      margin: 0 auto 20px;
+    }
+  }
+}
+
+.posts__panorama {
+  position: relative;
+  @media @mobile-widths {
+    background: url("../img/panorama-mobile@1x.jpg") no-repeat;
+    min-height: 137px;
+    background-size: cover;
+  }
+
+  @media @tablet-widths {
+    background: url("../img/panorama-tablet.jpg") no-repeat;
+    background-size: cover;
+    min-height: 509px;
+  }
+
+  @media @desktop-widths {
+    min-height: 506px;
+    background: url("../img/panorama-desktop.jpg") no-repeat;
+    background-size: cover;
+  }
+}
+
+.posts__description {
+  .set-font(12px; white; bold; 24px);
+  position: absolute;
+  background-color: @pink;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  padding: 6px 0px 0px 19px;
+  width: 140px;
+  height: 36px;
+  top: 0;
+  right: 20px;
+  @media @tablet-widths {
+    top: 57px;
+    right: 5.6%;
+  }
+
+  @media @desktop-widths {
+    top: 54px;
+    right: 10.8%;
+  }
+}
+
+.posts__inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+  @media @mobile-widths {
+    width: 280px;
+  }
+
+  @media @tablet-widths {
+    justify-content: space-between;
+    width: 617px;
+  }
+
+  @media @desktop-widths {
+    width: 939px
+  }
+}
+
+.posts__item {
+  background-color: @grey;
+  margin-bottom: 20px;
+  button {
+    border: none;
+    position: absolute;
+    width: 13px;
+    height: 12px;
+    background: url("../img/icon-heart.svg") no-repeat;
+    @media @mobile-widths {
+      left: 6%;
+      bottom: 26px;
+    }
+
+    @media @tablet-widths {
+      right: 32px;
+      bottom: 28px;
+    }
+  }
+
+  @media @mobile-widths {
+    flex-basis: 100%;
+  }
+
+  @media @tablet-widths {
+    flex-basis: 48.5%;
+    min-height: 454px;
+  }
+
+  @media @desktop-widths {
+    flex-basis: 32%;
+    min-height: 556px;
+    margin-bottom: 54px;
+  }
+
+  .posts__like {
+    @media @tablet-widths {
+      position: absolute;
+      bottom: 21px;
+      left: 27px;
+    }
+  }
+}
+
+.posts__content {
+  padding: 20px 0 0 18px;
+  box-sizing: border-box;
+  @media @tablet-widths {
+    padding: 26px 0 0 27px;
+  }
+}
+
+.posts__title {
+  background-color: @grey;
+  margin: auto;
+  @media @mobile-widths {
+    padding: 18px 0 0 18px;
+    box-sizing: border-box;
+  }
+
+  @media @tablet-widths {
+    width: 617px;
+    min-height: 121px;
+    margin: 0 auto 50px;
+    padding: 24px 0px 0px 27px;
+    box-sizing: border-box;
+  }
+
+  @media @desktop-widths {
+    width: 939px;
+    min-height: 95px;
+  }
+
+  button {
+    position: absolute;
+    border: none;
+    width: 13px;
+    height: 12px;
+    background: url("../img/icon-heart.svg") no-repeat;
+    @media @mobile-widths {
+      left: 6%;
+      bottom: 26px;
+    }
+
+    @media @tablet-widths {
+      right: 28px;
+      top: 30px;
+    }
+  }
+
+  .posts__like {
+    @media @tablet-widths {
+      top: 24px;
+      right: 57px;
+      position: absolute;
+    }
+  }
+}
+
+.posts__picture {
+  display: none;
+  @media @mobile-widths {
+    &--mobile {
+      display: block;
+    }
+  }
+
+  @media @tablet-widths and @tablet-widths-max {
+    &--tablet {
+      display: block;
+    }
+  }
+
+  @media @desktop-widths {
+    &--desktop {
+      display: block;
+    }
+  }
+}
+
+.posts__author {
+  .set-font(14px; black; bold; 24px);
+}
+
+.posts__time {
+  text-transform: uppercase;
+  // @media @mobile-widths {
+    font-weight: lighter;
+    font-size: 12px
+  // }
+}
+
+.posts__comment {
+  @media @mobile-widths {
+    margin: 0;
+  }
+
+  @media @tablet-widths {
+    margin-top: -1px;
+    padding-right: 15px;
+  }
+}
+
+.posts__like {
+  .set-font(12px; @pink; normal; 24px);
+  text-transform: uppercase;
+  @media @mobile-widths {
+    padding: 9px 30px 19px 30px;
+  }
+}
