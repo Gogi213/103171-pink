@@ -5,11 +5,22 @@
   line-height: @line-height;
 }
 
-.container-desktop () {
-  width: 1200px;
+.container() {
+  width: 87%;
   margin: 0 auto;
 }
 
-.container-mobile () {
-  min-width: 320px;
+.container-tablet() {
+  width: 620px;
+  margin: 0 auto;
+}
+
+.toggle() {
+  content: '';
+  position: absolute;
+  background-color: @grey;
+  width: 10px;
+  height: 10px;
+  border: 2px solid @pink;
+  border-radius: 50%;
 }
