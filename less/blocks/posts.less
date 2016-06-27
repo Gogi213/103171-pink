@@ -11,41 +11,44 @@
 
 .posts__panorama {
   position: relative;
-  &::after {
-    content: '';
-    position: absolute;
-    background: url("../img/panorama-absolute.jpg");
-    width: 140px;
-    height: 36px;
-    top: 0;
-    right: 20px;
-    @media @tablet-widths {
-      top: 57px;
-      right: 5.6%;
-    }
-
-    @media @desktop-widths {
-      top: 54px;
-      right: 10.8%;
-    }
-  }
-
   @media @mobile-widths {
     background: url("../img/panorama-mobile@1x.jpg") no-repeat;
-    height: 137px;
+    min-height: 137px;
     background-size: cover;
   }
 
   @media @tablet-widths {
     background: url("../img/panorama-tablet.jpg") no-repeat;
     background-size: cover;
-    height: 509px;
+    min-height: 509px;
   }
 
   @media @desktop-widths {
-    height: 506px;
+    min-height: 506px;
     background: url("../img/panorama-desktop.jpg") no-repeat;
     background-size: cover;
+  }
+}
+
+.posts__description {
+  .set-font(12px; white; bold; 24px);
+  position: absolute;
+  background-color: @pink;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  padding: 6px 0px 0px 19px;
+  width: 140px;
+  height: 36px;
+  top: 0;
+  right: 20px;
+  @media @tablet-widths {
+    top: 57px;
+    right: 5.6%;
+  }
+
+  @media @desktop-widths {
+    top: 54px;
+    right: 10.8%;
   }
 }
 
@@ -71,8 +74,8 @@
 .posts__item {
   background-color: @grey;
   margin-bottom: 20px;
-  &::after {
-    content: '';
+  button {
+    border: none;
     position: absolute;
     width: 13px;
     height: 12px;
@@ -94,12 +97,12 @@
 
   @media @tablet-widths {
     flex-basis: 48.5%;
-    height: 454px;
+    min-height: 454px;
   }
 
   @media @desktop-widths {
     flex-basis: 32%;
-    height: 556px;
+    min-height: 556px;
     margin-bottom: 54px;
   }
 
@@ -130,7 +133,7 @@
 
   @media @tablet-widths {
     width: 617px;
-    height: 121px;
+    min-height: 121px;
     margin: 0 auto 50px;
     padding: 24px 0px 0px 27px;
     box-sizing: border-box;
@@ -138,12 +141,12 @@
 
   @media @desktop-widths {
     width: 939px;
-    height: 95px;
+    min-height: 95px;
   }
 
-  &::after {
-    content: '';
+  button {
     position: absolute;
+    border: none;
     width: 13px;
     height: 12px;
     background: url("../img/icon-heart.svg") no-repeat;

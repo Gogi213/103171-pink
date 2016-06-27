@@ -1,4 +1,13 @@
 .map {
-  height: 379px;
-  overflow: hidden;
+  @media @mobile-widths {
+    height: 200px;
+  }
+
+  @media @tablet-widths {
+    height: 377px;
+  }
+
+  @media @desktop-widths {
+    height: 502px;
+  }
 }

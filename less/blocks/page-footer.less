@@ -2,25 +2,30 @@
   display: flex;
   justify-content: space-between;
   padding: 40px 5% 0 6%;
+  &--absent {
+    @media @mobile-widths {
+      display: none;
+    }
+
+    @media @desktop-widths {
+      padding-top: 70px;
+    }
+  }
+
+
+
   @media @mobile-widths {
     flex-direction: column;
     align-items: center;
-    padding: 55px 5% 0 6%;
   }
 
   @media @tablet-widths {
     padding: 37px 5% 0 6%;
   }
-
+    // padding-top: 142px;
   @media @desktop-widths {
     width: 950px;
     margin: 0 auto;
     padding-top: 100px;
-  }
-
-  &--absent {
-    @media @mobile-widths {
-      display: none;
-    }
   }
 }

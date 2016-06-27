@@ -4,41 +4,45 @@
   position: relative;
   overflow: hidden;
   @media @mobile-widths {
-    height: 388px;
+    min-height: 388px;
   }
 
   @media @tablet-widths {
     margin-top: 45px;
-    height: 367px;
+    min-height: 371px;
   }
 
   @media @desktop-widths {
-    margin: 154px 19% 0 19%;
+    padding: 109px 19% 0 19%;
     overflow: visible;
-    height: 343px;
+    min-height: 343px;
     &::before {
       content: '';
       width: 78px;
       height: 63px;
       position: absolute;
-      right: 44.5%;
-      top: -83px;
+      right: 46.5%;
+      top: 25px;
       background: url("../img/icon-quotes.svg") no-repeat;
     }
   }
 
   &::after {
-    content: '';
-    width: 164%;
-    height: 100%;
-    position: absolute;
-    right: -229px;
-    bottom: 0;
-    background: url("../img/bg-triangle-white.svg") no-repeat;
-    transform: rotate(180deg);
-    @media @mobile-widths {
-      bottom: -42px;
-    }
+      content: '';
+      width: 100%;
+      height: 100px;
+      position: absolute;
+      right: 0;
+      bottom: -14%;
+      background: url("../img/bg-triangle-white.svg") no-repeat;
+      transform: rotate(180deg);
+      @media @tablet-widths {
+        bottom: -11px;
+      }
+
+      @media @desktop-widths {
+        bottom: 0;
+      }
   }
 }
 
@@ -55,8 +59,8 @@
       position: absolute;
       width: 27px;
       height: 41px;
-      top: 58px;
-      left: -99px;
+      top: 167px;
+      left: 130px;
       background: url("../img/icon-review-arrow-left.svg") no-repeat;
     }
 
@@ -65,8 +69,8 @@
       position: absolute;
       width: 27px;
       height: 41px;
-      top: 58px;
-      right: -99px;
+      top: 167px;
+      right: 129px;
       background: url("../img/icon-review-arrow-left.svg") no-repeat;
       transform: rotate(180deg);
     }
