@@ -1,6 +1,6 @@
 .pop-up {
   .set-font(14px; @dark-blue; normal; normal);
-  // display: none;
+  display: none;
   margin: 0 auto;
   text-align: center;
   min-height: 250px;
@@ -15,6 +15,11 @@
 
   b {
     .set-font(18px; black; bold; normal)
+  }
+  @media @tablet-widths {
+    width: 460px;
+    min-height: 360px;
+    margin: 0 auto;
   }
 }
 
