@@ -41,9 +41,15 @@
       <div class="download">
         <a class="download__btn">Скачать приложение</a>
         <div class="download__list">
-          <a class="download__link" href="#">123</a>
-          <a class="download__link" href="#">234</a>
-          <a class="download__link" href="#">345</a>
+          <a class="download__link" href="#">
+            <img src="img/logo-apple.svg" alt="apple" width="47" height="57">
+          </a>
+          <a class="download__link" href="#">
+            <img src="img/logo-android.svg" alt="android" width="43" height="48">
+          </a>
+          <a class="download__link" href="#">
+            <img src="img/logo-microsoft.svg" alt="microsoft" width="44" height="42">
+          </a>
         </div>
         <p class="download__available">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
       </div>
@@ -54,9 +60,15 @@
       <div class="download-alt">
         <a class="download-alt__btn">Скачать приложение</a>
         <div class="download-alt__list">
-          <a class="download-alt__link" href="#">123</a>
-          <a class="download-alt__link" href="#">234</a>
-          <a class="download-alt__link" href="#">345</a>
+          <a class="download-alt__link" href="#">
+            <img src="img/logo-apple.svg" alt="apple" width="47" height="57">
+          </a>
+          <a class="download-alt__link" href="#">
+            <img src="img/logo-android.svg" alt="android" width="43" height="48">
+          </a>
+          <a class="download-alt__link" href="#">
+            <img src="img/logo-microsoft.svg" alt="microsoft" width="44" height="42">
+          </a>
         </div>
         <p class="download-alt__available">Доступно для Iphone, Ipad, Android, Windows Phone, OS x, Windows 8</p>
       </div>
@@ -66,8 +78,8 @@
           <h2>Нам есть, что вам<br class="content__add"> предложить!</h2>
         </div>
         <div class="good">
-          <img class="good__img good__img--desktop" src="img/iphone-screen-1-desktop@1x.png" alt="iphone-bw">
-          <img class="good__img good__img--desktop" src="img/iphone-screen-2-desktop@1x.png" alt="iphone-pink">
+          <img class="good__img good__img--desktop" src="img/iphone-screen-1-desktop@1x.png" srcset="img/iphone-screen-1-desktop@2x.png 2x" alt="iphone-bw">
+          <img class="good__img good__img--desktop" src="img/iphone-screen-2-desktop@1x.png" srcset="img/iphone-screen-2-desktop@2x.png 2x" alt="iphone-pink">
           <div class="good__wrapper">
             <article class="good__item">
               <h2>Поднимает настроение</h2>
@@ -82,9 +94,11 @@
               <p>Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
             </article>
           </div>
-          <img class="good__img good__img--desktop" src="img/iphone-screen-3-desktop@1x.png" alt="smile">
-          <img class="good__img good__img--mobile" src="img/iphone-screen-mobile@1x.png" alt="smile">
-          <img class="good__img good__img--tablet" src="img/iphone-screen-3-tablet@1x.png" alt="smile">
+          <picture class="good__pictures">
+            <source media="(min-width: 1200px)" srcset="img/iphone-screen-3-desktop@1x.png 1x, img/iphone-screen-3-desktop@1x.png 2x">
+            <source media="(min-width: 700px)" srcset="img/iphone-screen-3-tablet@1x.png 1x, img/iphone-screen-3-tablet@2x.png 2x">
+            <img class="good__img" src="img/iphone-screen-mobile@1x.png" srcset="img/iphone-screen-mobile@2x.png 2x" alt="Smile">
+          </picture>
         </div>
         <div class="profit">
           <div class="profit__stopwatch">

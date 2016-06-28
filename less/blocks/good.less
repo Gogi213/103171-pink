@@ -66,20 +66,7 @@
     margin-top: -93px;
   }
 
-  &--mobile {
-    @media @tablet-widths {
-      display: none;
-    }
-  }
 
-  &--tablet {
-    display: none;
-    margin-top: -58px;
-    margin-left: 26px;
-    @media @tablet-widths and @tablet-widths-max {
-      display: block;
-    }
-  }
 
   &--desktop {
     @media @tablet-widths {
@@ -93,6 +80,12 @@
     @media @desktop-widths {
       display: block;
     }
+  }
+}
+
+.good__pictures {
+  @media @desktop-widths {
+    order: -1;
   }
 }
 

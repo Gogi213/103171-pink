@@ -3,9 +3,9 @@
   position: relative;
   background-size: cover;
   @media @mobile-widths {
-    background-image: url("../img/bg-back-mobile@1x.jpg");
+    background: url("../img/bg-back-mobile@1x.jpg") no-repeat;
     @media @retina {
-      background-image: url("../img/bg-back-mobile@2x.jpg");
+      background: url("../img/bg-back-mobile@2x.jpg") no-repeat;
     }
     background-position: 48% 0;
     min-height: 237px;
@@ -15,9 +15,9 @@
     &--picture::after {
       content: '';
       position: absolute;
-      background-image: url("../img/iphone-hand-mobile@1x.png");
+      background: url("../img/iphone-hand-mobile@1x.png") no-repeat;
       @media @retina {
-        background-image: url("../img/iphone-hand-mobile@2x.png");
+        background: url("../img/iphone-hand-mobile@2x.png") no-repeat;
       }
       width: 258px;
       height: 286px;
@@ -27,10 +27,10 @@
   }
 
   @media @tablet-widths {
-    // background-image: url("../img/bg-back-tablet@1x.jpg");
-    // @media @retina {
-    //   background-image: url("../img/bg-back-tablet@2x.jpg");
-    // }
+    background: url("../img/bg-back-tablet@1x.jpg") no-repeat;
+    @media @retina {
+      background: url("../img/bg-back-tablet@2x.jpg") no-repeat;
+    }
     min-height: 440px;
     &--picture {
       min-height: 729px;
@@ -38,10 +38,10 @@
     &--picture::after {
       content: '';
       position: absolute;
-      // background-image: url("../img/iphone-hand-tablet@1x.png");
-      // @media @retina {
-      //   background-image: url("../img/iphone-hand-tablet@1x.png");
-      // }
+      background: url("../img/iphone-hand-tablet@1x.png") no-repeat;
+      @media @retina {
+        background: url("../img/iphone-hand-tablet@2x.png") no-repeat;
+      }
       bottom: 0;
       right: 0;
       width: 700px;
@@ -54,6 +54,13 @@
     min-height: 395px;
     &--picture {
       min-height: 853px;
+    }
+
+    &--picture::after {
+      background: url("../img/iphone-hand-desktop@1x.png") no-repeat;
+      @media @retina {
+        background: url("../img/iphone-hand-tablet@2x.png") no-repeat;
+      }
     }
   }
 }

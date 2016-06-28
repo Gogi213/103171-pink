@@ -13,6 +13,9 @@
   position: relative;
   @media @mobile-widths {
     background: url("../img/panorama-mobile@1x.jpg") no-repeat;
+    @media @retina {
+      background: url("../img/panorama-mobile@2x.jpg") no-repeat;
+    }
     min-height: 137px;
     background-size: cover;
   }
@@ -170,37 +173,14 @@
   }
 }
 
-.posts__picture {
-  display: none;
-  @media @mobile-widths {
-    &--mobile {
-      display: block;
-    }
-  }
-
-  @media @tablet-widths and @tablet-widths-max {
-    &--tablet {
-      display: block;
-    }
-  }
-
-  @media @desktop-widths {
-    &--desktop {
-      display: block;
-    }
-  }
-}
-
 .posts__author {
   .set-font(14px; black; bold; 24px);
 }
 
 .posts__time {
   text-transform: uppercase;
-  // @media @mobile-widths {
     font-weight: lighter;
     font-size: 12px
-  // }
 }
 
 .posts__comment {
