@@ -97,9 +97,9 @@
             </article>
           </div>
           <picture class="good__pictures">
-            <source media="(min-width: 1200px)" srcset="img/iphone-screen-3-desktop@1x.png 1x, img/iphone-screen-3-desktop@1x.png 2x">
-            <source media="(min-width: 700px)" srcset="img/iphone-screen-3-tablet@1x.png 1x, img/iphone-screen-3-tablet@2x.png 2x">
-            <img class="good__img" src="img/iphone-screen-mobile@1x.png" srcset="img/iphone-screen-mobile@2x.png 2x" alt="Smile">
+            <source media="(min-width: 1200px)" srcset="img/iphone-screen-3-desktop@1x.png 1x, img/iphone-screen-3-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/iphone-screen-3-tablet@1x.png 1x, img/iphone-screen-3-tablet@2x 2x">
+            <img class="good__img" src="img/iphone-screen-mobile@1x.png" srcset="img/iphone-screen-mobile@2x.png 2x" alt="Smile" >
           </picture>
         </div>
         <div class="profit">
@@ -209,7 +209,7 @@
       <div class="contacts__wrapper">
         <b>Пишите:</b>
         <br>
-        <span class="contacts__our-contacts">mail@htmlacademy.ru</span>
+        <a class="contacts__our-contacts" href="#">mail@htmlacademy.ru</a>
       </div>
       <div class="contacts__wrapper">
         <b>Приезжайте в гости:</b>
@@ -250,6 +250,7 @@
       </a>
     </div>
   </footer>
+  <script src="js/picturefill.js"></script>
 </body>
 
 </html>

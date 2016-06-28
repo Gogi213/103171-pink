@@ -8,7 +8,7 @@
 
   @media @desktop-widths {
     padding-top: 62px;
-    min-height: 442px;
+    min-height: 373px;
   }
 
   input {
@@ -138,20 +138,29 @@
 }
 
 .price-slider__controls {
-  @media @tablet-widths {
-    display: none;
-  }
   position: absolute;
   bottom: 39px;
   left: 123px;
   label {
-  display: inline-block;
-  width: 6px;
-  height: 6px;
-  margin: 0 8px;
-  background: #ccc;
-  cursor: pointer;
-  border-radius: 50%;
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    margin: 0 8px;
+    background: @dark-blue;
+    opacity: 0.3;
+    cursor: pointer;
+    border-radius: 50%;
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.1;
+    }
+  }
+
+  @media @tablet-widths {
+    display: none;
   }
 }
 
@@ -261,21 +270,15 @@
 
 @media @mobile-widths {
   #sliderPage4:checked ~ .price-slider__controls label[for="sliderPage4"] {
-    background-color: white;
-    box-shadow: 0 0 0 3px @dark-blue;
-    margin-bottom: 0;
+  .toggle-hover();
   }
 
   #sliderPage5:checked ~ .price-slider__controls label[for="sliderPage5"] {
-    background-color: white;
-    box-shadow: 0 0 0 3px @dark-blue;
-    margin-bottom: 0;
+  .toggle-hover();
   }
 
   #sliderPage6:checked ~ .price-slider__controls label[for="sliderPage6"] {
-    background-color: white;
-    box-shadow: 0 0 0 3px @dark-blue;
-    margin-bottom: 0;
+  .toggle-hover();
   }
 
   #sliderPage4:checked ~ table tr {

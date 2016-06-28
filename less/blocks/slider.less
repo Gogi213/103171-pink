@@ -159,26 +159,28 @@
     width: 6px;
     height: 6px;
     margin: 0 8px;
-    background: #ccc;
+    background: @dark-blue;
+    opacity: 0.3;
     cursor: pointer;
     border-radius: 50%;
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.1;
+    }
 }
 
 #sliderPage1:checked ~ .slider__controls label[for="sliderPage1"] {
-  background-color: white;
-  box-shadow: 0 0 0 3px @dark-blue;
-  margin-bottom: 0;
+  .toggle-hover();
 }
 
 #sliderPage2:checked ~ .slider__controls label[for="sliderPage2"] {
-  background-color: white;
-  box-shadow: 0 0 0 3px @dark-blue;
-  margin-bottom: 0;
+  .toggle-hover();
 }
 #sliderPage3:checked ~ .slider__controls label[for="sliderPage3"] {
-    background-color: white;
-    box-shadow: 0 0 0 3px @dark-blue;
-    margin-bottom: 0;
+  .toggle-hover();
 }
 
 #sliderPage1:checked ~ .slider__inner .slider__slides {
