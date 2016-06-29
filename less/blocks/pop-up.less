@@ -1,0 +1,43 @@
+.pop-up {
+  .set-font(14px; @dark-blue; normal; normal);
+  display: none;
+  margin: 0 auto;
+  text-align: center;
+  min-height: 250px;
+  padding-top: 40px;
+  box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.1);
+  margin-bottom: 70px;
+  box-sizing:border-box;
+  p {
+    margin-top: 29px;
+    margin-bottom: 44px;
+  }
+
+  b {
+    .set-font(18px; black; bold; normal)
+  }
+  @media @tablet-widths {
+    width: 460px;
+    min-height: 360px;
+    margin: 0 auto;
+  }
+}
+
+.pop-up__button {
+  &--color {
+    min-height: 119px;
+    padding-top: 65px;
+    background-color: @grey;
+  }
+
+  button {
+    .set-font(14px; white; bold; normal);
+    text-transform: uppercase;
+    background-color: #2aab6d;
+    border: none;
+    border-radius: 2px;
+    padding: 21px;
+    width: 276px;
+    cursor: pointer;
+  }
+}

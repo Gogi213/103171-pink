@@ -31,8 +31,30 @@
     border-top: 1px solid #495562;
     padding: 18px 0;
   }
+
+  @media @tablet-widths-max {
+    &:hover {
+      color: @pink;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
   @media @desktop-widths {
     .set-font(18px; white; normal; normal);
     text-decoration: none;
+    border-bottom: 2px solid transparent;
+    &:hover {
+      border-bottom: 2px solid white;
+    }
+
+    &:active {
+      color: @pink;
+      &:hover {
+        border-bottom: 2px solid @pink;
+      }
+    }
   }
 }

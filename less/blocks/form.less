@@ -111,6 +111,10 @@
       min-height: 537px;
     }
 
+    @media @desktop-widths {
+      min-height: 217px;
+    }
+
     input[type="checkbox"]:checked ~ label::after {
       width: 21px;
       height: 10px;
@@ -158,11 +162,26 @@
         width: 33px;
         height: 33px;
         content: '';
-        border: 2px solid #e5e5e5;
+        border: 2px solid  @dark-blue;
+        opacity: 0.2;
         @media @tablet-widths {
           top: -5px;
           left: -60px;
         }
+      }
+
+      &:hover::before {
+        opacity: 1;
+      }
+
+      &:focus::before {
+        opacity: 1;
+        outline: none;
+      }
+
+      &:active::before {
+        opacity: 1;
+        border-color: @pink;
       }
 
       &::after {
@@ -302,11 +321,25 @@
         height: 34px;
         top: -5px;
         left: -69px;
-        border: solid 2px #e5e5e5;
+        border: 2px solid  @dark-blue;
+        opacity: 0.2;
         background-color: white;
         @media @tablet-widths {
           left: -58px;
         }
+      }
+      &:hover::before {
+        opacity: 1;
+      }
+
+      &:focus::before {
+        opacity: 1;
+        outline: none;
+      }
+
+      &:active::before {
+        opacity: 1;
+        border-color: @pink;
       }
 
       &::after {
@@ -388,6 +421,10 @@
         margin-bottom: 22px;
       }
     }
+
+    input, textarea {
+      .input-hover();
+    }
   }
 }
 
@@ -424,6 +461,19 @@
 
   @media @tablet-widths {
     padding: 17px 57px;
+  }
+
+  &:hover {
+    background: @dark-green;
+  }
+
+  &:focus {
+    background: @dark-green;
+    outline: none;
+  }
+
+  &:active {
+    background: @dark-green;
   }
 }
 

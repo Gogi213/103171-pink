@@ -53,29 +53,31 @@
 }
 
 .slider__paginator{
+  display: none;
   @media @desktop-widths {
-    &::before {
-      content: '';
-      position: absolute;
-      width: 27px;
-      height: 41px;
-      top: 167px;
-      left: 130px;
-      background: url("../img/icon-review-arrow-left.svg") no-repeat;
-    }
+    display: block;
+  }
+  position: absolute;
+  width: 27px;
+  height: 41px;
+  top: 163px;
+  right: 128px;
+  fill: @dark-blue;
+  opacity: 0.3;
 
-    &::after {
-      content: '';
-      position: absolute;
-      width: 27px;
-      height: 41px;
-      top: 167px;
-      right: 129px;
-      background: url("../img/icon-review-arrow-left.svg") no-repeat;
-      transform: rotate(180deg);
-    }
+  &--left {
+    left: 128px;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.1;
   }
 }
+
 
 .slider__add {
   @media @desktop-widths {
@@ -159,26 +161,28 @@
     width: 6px;
     height: 6px;
     margin: 0 8px;
-    background: #ccc;
+    background: @dark-blue;
+    opacity: 0.3;
     cursor: pointer;
     border-radius: 50%;
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.1;
+    }
 }
 
 #sliderPage1:checked ~ .slider__controls label[for="sliderPage1"] {
-  background-color: white;
-  box-shadow: 0 0 0 3px @dark-blue;
-  margin-bottom: 0;
+  .toggle-hover();
 }
 
 #sliderPage2:checked ~ .slider__controls label[for="sliderPage2"] {
-  background-color: white;
-  box-shadow: 0 0 0 3px @dark-blue;
-  margin-bottom: 0;
+  .toggle-hover();
 }
 #sliderPage3:checked ~ .slider__controls label[for="sliderPage3"] {
-    background-color: white;
-    box-shadow: 0 0 0 3px @dark-blue;
-    margin-bottom: 0;
+  .toggle-hover();
 }
 
 #sliderPage1:checked ~ .slider__inner .slider__slides {

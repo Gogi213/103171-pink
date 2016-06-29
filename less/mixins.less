@@ -16,11 +16,31 @@
 }
 
 .toggle() {
-  content: '';
   position: absolute;
   background-color: @grey;
   width: 10px;
   height: 10px;
   border: 2px solid @pink;
   border-radius: 50%;
+}
+
+.toggle-hover() {
+  background-color: white;
+  box-shadow: 0 0 0 3px @dark-blue;
+  margin-bottom: 0;
+  opacity: 1;
+}
+
+.input-hover() {
+  &:hover {
+    border: 2px solid @dark-blue;
+  }
+
+  &:focus {
+    border: 2px solid @dark-blue;
+  }
+
+  &:active {
+    border: 2px solid @pink;
+  }
 }
