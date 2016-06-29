@@ -4,33 +4,29 @@
     padding-top: 26px;
   }
 }
-
 .social-links__item {
-    padding: 10px;
-    margin: 8px;
-    border-radius: 50%;
-    border: 3px solid #e9ebec;
-    width: 22px;
-    height: 22px;
-    &:hover {
-      border: 3px solid @dark-blue;
+  padding: 10px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 3px solid #e9ebec;
+  width: 22px;
+  height: 22px;
+  &:hover {
+    border: 3px solid @dark-blue;
+  }
+  &:active {
+    opacity: 0.1;
+  }
+  &--fb {
+    img {
+      position: relative;
+      left: 5px;
     }
-
-    &:active {
-      opacity: 0.1;
+  }
+  &--yt {
+    img {
+      position: relative;
+      left: 4px;
     }
-
-    &--fb {
-      img {
-        position: relative;
-        left: 5px;
-      }
-    }
-
-    &--yt {
-      img {
-        position: relative;
-        left: 4px;
-      }
-    }
+  }
 }

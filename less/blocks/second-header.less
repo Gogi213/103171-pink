@@ -8,7 +8,7 @@
     }
     background-position: 48% 0;
     min-height: 237px;
-    &--picture  {
+    &--picture {
       min-height: 460px;
     }
     &--picture::after {
@@ -26,7 +26,6 @@
       }
     }
   }
-
   @media @tablet-widths {
     background: url("../img/bg-back-tablet@1x.jpg") no-repeat;
     @media @retina and @tablet-widths {
@@ -51,16 +50,14 @@
       }
     }
   }
-
   @media @desktop-widths {
     background-image: url("../img/bg-back-desktop@1x.jpg");
     min-height: 395px;
     &--picture {
       min-height: 853px;
     }
-
     &--picture::after {
-      bottom: 0px;
+      bottom: 0;
       right: 3px;
       width: 1050px;
       height: 645px;
@@ -73,7 +70,6 @@
     }
   }
 }
-
 .second-header__title {
   margin: 0;
   text-align: center;
@@ -81,11 +77,9 @@
     .set-font(50px; white; lighter; 60px);
     padding: 180px 13% 0;
   }
-
   @media @desktop-widths {
     padding-top: 173px;
   }
-
   &--alt {
     .set-font(40px; white; lighter; 49px);
     display: inline-block;
@@ -93,23 +87,20 @@
     @media @mobile-widths {
       display: none;
     }
-
     @media @tablet-widths {
       padding-top: 203px;
       padding-left: 95px;
     }
-
     @media @desktop-widths {
       .set-font(50px; white; lighter; 60px);
       padding-top: 218px;
       padding-left: 162px;
     }
   }
-
   &--small {
     @media @mobile-widths {
-    .set-font(24px; white; lighter; 30px);
-    padding: 95px 13% 0;
+      .set-font(24px; white; lighter; 30px);
+      padding: 95px 13% 0;
     }
   }
 }

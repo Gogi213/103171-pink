@@ -7,16 +7,13 @@
     margin-bottom: -74px;
     min-height: 392px;
   }
-
   @media @tablet-widths {
     min-height: 110px;
   }
-
   @media @tablet-widths-max {
     display: flex;
     flex-direction: column;
   }
-
   @media @desktop-widths {
     display: flex;
     justify-content: space-between;
@@ -24,20 +21,16 @@
     padding: 0 10.6%;
   }
 }
-
 .page-header__nav {
   @media @mobile-widths {
     order: -1;
     padding-top: 70px;
     background-color: @dark-blue;
   }
-
   @media @desktop-widths {
     flex-basis: 66%;
   }
-
 }
-
 .page-header__link {
   display: inline-block;
   margin: 0;
@@ -46,18 +39,15 @@
     margin-top: 21px;
     width: 76px;
   }
-
   @media @tablet-widths {
     padding: 26px 0 0 36px;
     width: 158px;
   }
-
   @media @desktop-widths {
     padding: 0;
     flex-basis: 17%;
   }
 }
-
 .page-header__img {
   width: 153px;
   @media @mobile-widths {
@@ -68,18 +58,15 @@
     &:hover {
       fill: @pink;
     }
-
     &:active {
       opacity: 0.3;
       fill: white;
     }
   }
-
   @media @desktop-widths {
     display: none;
   }
 }
-
 .page-header__icon {
   width: 48px;
   cursor: pointer;
@@ -91,15 +78,13 @@
     top: 43px;
     right: 41px;
   }
-
-  @media  @tablet-widths-max {
+  @media @tablet-widths-max {
     .page-header__btn {
-    display: block;
-    width: 100%;
-    height: 3px;
-    background-color: white;
+      display: block;
+      width: 100%;
+      height: 3px;
+      background-color: white;
     }
-
     .page-header__btn::before {
       content: '';
       display: block;
@@ -108,21 +93,19 @@
       background-color: white;
       transform: translate(0, -10px);
     }
-
     .page-header__btn::after {
-        content: '';
-        display: block;
-        width: 100%;
-        height: 3px;
-        background-color: white;
-        transform: translate(0, 7px);
+      content: '';
+      display: block;
+      width: 100%;
+      height: 3px;
+      background-color: white;
+      transform: translate(0, 7px);
     }
   }
   @media @desktop-widths {
     display: none;
   }
 }
-
 .page-header__picture {
   @media @tablet-widths and @tablet-widths-max {
     display: none;

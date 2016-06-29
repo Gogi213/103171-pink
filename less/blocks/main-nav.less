@@ -7,11 +7,9 @@
     text-align: center;
     background-color: @dark-blue;
   }
-
   @media @tablet-widths {
     display: none;
   }
-
   @media @desktop-widths {
     text-transform: none;
     margin-top: -2px;
@@ -21,7 +19,6 @@
     justify-content: space-between;
   }
 }
-
 .main-nav__link {
   @media @mobile-widths {
     flex-basis: 100%;
@@ -31,17 +28,14 @@
     border-top: 1px solid #495562;
     padding: 18px 0;
   }
-
   @media @tablet-widths-max {
     &:hover {
       color: @pink;
     }
-
     &:active {
       opacity: 0.3;
     }
   }
-
   @media @desktop-widths {
     .set-font(18px; white; normal; normal);
     text-decoration: none;
@@ -49,7 +43,6 @@
     &:hover {
       border-bottom: 2px solid white;
     }
-
     &:active {
       color: @pink;
       &:hover {
