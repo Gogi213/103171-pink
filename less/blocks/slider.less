@@ -53,29 +53,31 @@
 }
 
 .slider__paginator{
+  display: none;
   @media @desktop-widths {
-    &::before {
-      content: '';
-      position: absolute;
-      width: 27px;
-      height: 41px;
-      top: 167px;
-      left: 130px;
-      background: url("../img/icon-review-arrow-left.svg") no-repeat;
-    }
+    display: block;
+  }
+  position: absolute;
+  width: 27px;
+  height: 41px;
+  top: 163px;
+  right: 128px;
+  fill: @dark-blue;
+  opacity: 0.3;
 
-    &::after {
-      content: '';
-      position: absolute;
-      width: 27px;
-      height: 41px;
-      top: 167px;
-      right: 129px;
-      background: url("../img/icon-review-arrow-left.svg") no-repeat;
-      transform: rotate(180deg);
-    }
+  &--left {
+    left: 128px;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.1;
   }
 }
+
 
 .slider__add {
   @media @desktop-widths {

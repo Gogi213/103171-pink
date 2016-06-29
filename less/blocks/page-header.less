@@ -60,6 +60,24 @@
 
 .page-header__img {
   width: 153px;
+  @media @mobile-widths {
+    display: none;
+  }
+  @media @tablet-widths {
+    fill: white;
+    &:hover {
+      fill: @pink;
+    }
+
+    &:active {
+      opacity: 0.3;
+      fill: white;
+    }
+  }
+
+  @media @desktop-widths {
+    display: none;
+  }
 }
 
 .page-header__icon {
@@ -101,6 +119,12 @@
     }
   }
   @media @desktop-widths {
+    display: none;
+  }
+}
+
+.page-header__picture {
+  @media @tablet-widths and @tablet-widths-max {
     display: none;
   }
 }
