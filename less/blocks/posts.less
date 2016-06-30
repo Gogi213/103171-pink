@@ -3,7 +3,6 @@
   article {
     position: relative;
     @media @mobile-widths {
-      width: 280px;
       margin: 0 auto 20px;
     }
   }
@@ -118,19 +117,18 @@
   background-color: @grey;
   margin: auto;
   @media @mobile-widths {
-    padding: 18px 0 0 18px;
-    box-sizing: border-box;
+    padding: 18px 0 0 19px;
+    width: 263px;
   }
   @media @tablet-widths {
-    width: 617px;
-    min-height: 121px;
+    width: 592px;
+    min-height: 98px;
     margin: 0 auto 50px;
     padding: 24px 0 0 27px;
-    box-sizing: border-box;
   }
   @media @desktop-widths {
-    width: 939px;
-    min-height: 95px;
+    width: 911px;
+    min-height: 73px;
   }
   button {
     position: absolute;
@@ -170,6 +168,10 @@
   @media @tablet-widths {
     margin-top: -1px;
     padding-right: 15px;
+    margin-bottom: 57px;
+  }
+  @media @desktop-widths {
+    margin-bottom: 58px;
   }
 }
 .posts__like {

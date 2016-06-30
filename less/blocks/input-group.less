@@ -5,7 +5,9 @@
   .set-font(18px; @dark-blue; normal; 30px);
 }
 .input-group {
+  position: relative;
   input {
+    position: relative;
     width: 100%;
     box-sizing: border-box;
     border: 2px solid #e5e5e5;
@@ -13,5 +15,29 @@
     @media @desktop-widths {
       padding: 13px 20px 16px;
     }
+  }
+}
+.input-group__label--phone {
+  &::after {
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 59px;
+    right: 2px;
+    top: -61px;
+    background: #e5e5e5 url("../img/icon-phone.svg") no-repeat 20px 20px;
+    z-index: 10;
+  }
+}
+.input-group__label--mail {
+  &::after {
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 59px;
+    right: 2px;
+    top: -61px;
+    background: #e5e5e5 url("../img/icon-mail.svg") no-repeat 20px 20px;
+    z-index: 10;
   }
 }

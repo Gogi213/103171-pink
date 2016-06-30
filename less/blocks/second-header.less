@@ -82,19 +82,22 @@
   }
   &--alt {
     .set-font(40px; white; lighter; 49px);
-    display: inline-block;
     text-align: center;
     @media @mobile-widths {
       display: none;
     }
     @media @tablet-widths {
+      .set-font(40px; white; lighter; 49px);
+      font-size: 40px;
       padding-top: 203px;
       padding-left: 95px;
+      width: 189px;
     }
     @media @desktop-widths {
       .set-font(50px; white; lighter; 60px);
       padding-top: 218px;
       padding-left: 162px;
+      width: 234px;
     }
   }
   &--small {

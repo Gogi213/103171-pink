@@ -14,13 +14,6 @@
     padding: 109px 19% 0;
     overflow: visible;
     min-height: 343px;
-    .slider__quotes {
-      width: 78px;
-      height: 63px;
-      position: absolute;
-      right: 46.5%;
-      top: 25px;
-    }
   }
   &::after {
     content: '';
@@ -39,6 +32,19 @@
     }
   }
 }
+
+.slider__quotes {
+  display: none;
+  @media @desktop-widths {
+    display: block;
+    width: 78px;
+    height: 63px;
+    position: absolute;
+    right: 46.5%;
+    top: 25px;
+  }
+}
+
 .slider__inner {
   @media @desktop-widths {
     overflow: hidden;

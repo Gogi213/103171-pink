@@ -11,15 +11,13 @@
     min-height: 460px;
   }
 }
-.profit_add {
-  @media @desktop-widths {
-    display: none;
-  }
-}
 .profit__title {
   .set-font(30px; black; bold; 36px);
   padding-top: 64px;
   margin-bottom: 0;
+  @media @tablet-widths and @tablet-widths-max {
+    width: 180px;
+  }
   @media @desktop-widths {
     padding-top: 108px;
   }
@@ -42,6 +40,10 @@
   .set-font(18px; @pink; normal; 24px);
   @media @tablet-widths-max {
     font-size: 14px;
+  }
+  @media @desktop-widths {
+    display: block;
+    padding-bottom: 25px;
   }
 }
 .profit__stopwatch {
