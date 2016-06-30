@@ -42,6 +42,17 @@ gulp.task("style", function() {
     }));
 });
 
+gulp.task("style-dev", function() {
+  gulp.src("less/style.less")
+    .pipe(plumber())
+    .pipe(less())
+    .pipe(rename("style.min.css"))
+    .pipe(gulp.dest("css"))
+    .pipe(server.reload({
+      stream: true
+    }));
+});
+
 gulp.task("images", function() {
   return gulp.src("build/img/**/*.{png,jpg,gif}")
     .pipe(imagemin([
@@ -65,15 +76,15 @@ gulp.task("symbols", function() {
     .pipe(gulp.dest("build/img"));
 });
 
-gulp.task("serve", function() {
+gulp.task("serve", ["style-dev"], function() {
   server.init({
-    server: "build",
+    server: ".",
     notify: false,
     open: true,
     ui: false
   });
 
-  gulp.watch("less/**/*.less", ["style"]);
+  gulp.watch("less/**/*.less", ["style-dev"]);
   gulp.watch("*.html").on("change", server.reload);
 });
 
