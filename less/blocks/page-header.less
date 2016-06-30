@@ -4,8 +4,6 @@
   margin-bottom: -110px;
   z-index: 10;
   @media @mobile-widths {
-    // margin-bottom: -74px;
-    // min-height: 392px;
     margin-bottom: 0;
   }
   @media @tablet-widths {
@@ -32,7 +30,7 @@
     flex-basis: 66%;
   }
 }
-.page-header__link {
+.page-header__logo {
   margin: 0;
   @media @mobile-widths {
     margin-left: 21px;
@@ -47,26 +45,29 @@
     padding: 0;
     flex-basis: 17%;
   }
-  &:first-child {
-    display: none;
-  }
-  &:nth-child(2) {
-      @media @desktop-widths {
-    display: none;
-  }
-  @media @mobile-widths {
-display: none;
 }
-
-  }
-  &:nth-child(3) {
+.page-header__logo-img {
+  &--mobile {
+    @media @mobile-widths {
+      padding-left: 22px;
+      display: block;
+    }
     display: none;
+  }
+  &--tablet {
+    @media @tablet-widths and @tablet-widths-max {
+      display: block;
+    }
+    display: none;
+  }
+  &--desktop {
     @media @desktop-widths {
       display: block;
     }
+    display: none;
   }
 }
-.page-header__img {
+.page-header__logo-img--tablet {
   fill: white;
   &:hover {
     fill: @pink;
@@ -76,43 +77,29 @@ display: none;
     fill: white;
   }
 }
-.page-header__icon {
+.page-header__btn {
   width: 48px;
+  height: 3px;
   cursor: pointer;
   position: absolute;
-  padding: 11px 0;
   top: 21px;
   right: 21px;
-  @media @mobile-widths {
-    display: none;
-  }
   @media @tablet-widths {
     top: 43px;
     right: 41px;
   }
   @media @tablet-widths-max {
-    .page-header__btn {
-      display: block;
-      width: 100%;
-      height: 3px;
-      background-color: white;
-    }
-    .page-header__btn::before {
+    &::after,
+    &::before {
       content: '';
       display: block;
-      width: 100%;
+      width: 48px;
       height: 3px;
       background-color: white;
-      transform: translate(0, -10px);
     }
-    .page-header__btn::after {
-      content: '';
-      display: block;
-      width: 100%;
-      height: 3px;
-      background-color: white;
-      transform: translate(0, 7px);
-    }
+  }
+  span::before {
+    transform: rotate(45deg);
   }
   @media @desktop-widths {
     display: none;
@@ -121,5 +108,14 @@ display: none;
 .page-header__picture {
   @media @tablet-widths and @tablet-widths-max {
     display: none;
+  }
+}
+.page-header__wrapper {
+  position: relative;
+  height: 69px;
+  background: @dark-blue;
+  border-bottom: 1px solid black;
+  @media @desktop-widths {
+    background: transparent;
   }
 }

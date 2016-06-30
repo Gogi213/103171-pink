@@ -1,14 +1,11 @@
 .main-nav {
   .set-font(18px; white; bold; 32px);
   text-transform: uppercase;
-  @media @mobile-widths {
+  @media @tablet-widths-max {
     display: flex;
     flex-wrap: wrap;
     text-align: center;
     background-color: @dark-blue;
-  }
-  @media @tablet-widths {
-    display: none;
   }
   @media @desktop-widths {
     text-transform: none;
@@ -20,7 +17,7 @@
   }
 }
 .main-nav__link {
-  @media @mobile-widths {
+  @media @tablet-widths-max {
     flex-basis: 100%;
     .set-font(18px; white; bold; normal);
     text-decoration: none;
