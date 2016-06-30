@@ -78,8 +78,7 @@ gulp.task("serve", function() {
 });
 
 gulp.task("build", function(fn) {
-  // run("clean", "copy", "style", "images", "symbols", fn);
-  run("copy", "style", fn);
+  run("clean", "copy", "style", "images", "symbols", fn);
 });
 
 gulp.task("copy", function() {
