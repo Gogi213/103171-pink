@@ -1,40 +1,102 @@
 .pop-up {
   .set-font(14px; @dark-blue; normal; normal);
-  display: none;
-  margin: 0 auto;
   text-align: center;
-  min-height: 250px;
-  padding-top: 40px;
   box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.1);
-  margin-bottom: 70px;
   box-sizing: border-box;
+  background: white;
+  border-radius: 5px;
   p {
     margin-top: 29px;
     margin-bottom: 44px;
+    @media @tablet-widths {
+      font-size: 18px;
+      margin-top: 22px;
+      line-height: 24px;
+    }
   }
   b {
-    .set-font(18px; black; bold; normal)
+    .set-font(18px; black; bold; normal);
+    @media @tablet-widths {
+      font-size: 30px;
+    }
   }
-   @media @tablet-widths{
-    width: 460px;
-    min-height: 360px;
-    margin: 0 auto;
+  &--invalid {
+    @media @mobile-widths {
+      padding-top: 42px;
+      min-height: 289px;
+    }
+    @media @desktop-widths {
+      width: 460px;
+      min-height: 360px;
+      padding: 40px 89px 0;
+    }
+  }
+  &--valid {
+    @media @mobile-widths {
+      line-height: 24px;
+      padding-top: 39px;
+    }
+    @media @desktop-widths {
+      padding: 27px 76px 0;
+    }
+    p {
+      @media @mobile-widths {
+        margin: 24px 26px 0;
+      }
+    }
   }
 }
 .pop-up__button {
   &--color {
+    text-align: center;
     min-height: 119px;
     padding-top: 65px;
     background-color: @grey;
+    @media @mobile-widths {
+      padding-top: 50px;
+    }
   }
   button {
-    .set-font(14px; white; bold; normal);
+    .set-font(18px; white; bold; normal);
     text-transform: uppercase;
     background-color: #2aab6d;
     border: none;
     border-radius: 2px;
-    padding: 21px;
+    padding: 18px;
     width: 276px;
     cursor: pointer;
+  }
+}
+.overlay {
+  z-index: 100;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.overlay__inner {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -75px;
+  @media @mobile-widths {
+    width: 320px;
+    margin-left: -160px;
+  }
+  &--valid {
+    display: none;
+    @media @mobile-widths {
+      margin-top: -236px;
+      margin-left: -160px;
+    }
+    @media @tablet-widths {
+      margin-top: 257px;
+      margin-left: -229px;
+      width: 461px;
+    }
+  }
+  &--invalid {
+    display: none;
   }
 }

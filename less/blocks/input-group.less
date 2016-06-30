@@ -19,6 +19,7 @@
 }
 .input-group__label--phone {
   &::after {
+    display: none;
     content: '';
     position: absolute;
     width: 60px;
@@ -27,10 +28,14 @@
     top: -61px;
     background: #e5e5e5 url("../img/icon-phone.svg") no-repeat 20px 20px;
     z-index: 10;
+    @media @desktop-widths {
+      display: block;
+    }
   }
 }
 .input-group__label--mail {
   &::after {
+    display: none;
     content: '';
     position: absolute;
     width: 60px;
@@ -39,5 +44,8 @@
     top: -61px;
     background: #e5e5e5 url("../img/icon-mail.svg") no-repeat 20px 20px;
     z-index: 10;
+    @media @desktop-widths {
+      display: block;
+    }
   }
 }

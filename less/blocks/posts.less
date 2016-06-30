@@ -6,6 +6,9 @@
       margin: 0 auto 20px;
     }
   }
+  button {
+    cursor: pointer;
+  }
 }
 .posts__panorama {
   position: relative;
@@ -62,6 +65,11 @@
   }
   @media @desktop-widths {
     width: 939px;
+  }
+  a {
+    @media @tablet-widths {
+      pointer-events: none;
+    }
   }
 }
 .posts__item {
